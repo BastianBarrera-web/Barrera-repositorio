@@ -1,0 +1,120 @@
+body{
+    background-color: hsl(211, 29%, 82%);
+}
+
+#body-inicio{
+    background-image: url(/assets/imagenes/foto-inicio-tres.jpg);
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: left center;
+    background-position-x: 500px;
+    background-position-y: 20px;
+    background-size: 80%;
+}
+
+
+.navbar-inicio{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-inicio{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+#subtitulo-inicio{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 190px;
+    margin-top: -15px; 
+}
+
+
+
+#body-biografia{
+    background-image: url(/assets/imagenes/foto-inicio-four.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-position-y: -20px;
+    background-size: 43%;
+}
+
+.titulo-biografia{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
+
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 800px;
+    
+}
+
+#body-curriculum{
+    background-image: url(/assets/imagenes/foto-inicio.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 50%;
+}
+
+#h1-curriculum {
+    margin-left: 230px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cv-subtitulo {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.ul-curriculum{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+
+#titulo-book{
+    text-align: center;
+}
+
+#section-book{
+    margin-left: 210px;
+}
+
+
+
+
+#titulo-reel{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+video{
+    width: 70%;
+    height: auto;    
+    margin-left: 210px;
+}
+
+
+
+
