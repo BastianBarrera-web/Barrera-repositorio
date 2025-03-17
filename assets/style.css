@@ -5,7 +5,7 @@
     }
     
     #body-inicio{
-        background-image: url(assets/imagenes/foto-inicio-tres.jpg);
+        background-image: url(./imagenes/foto-inicio-tres.jpg);
         background-repeat: no-repeat;
         background-attachment: relative;
         background-position: left center;
@@ -90,7 +90,7 @@
 
 
     #body-curriculum{
-        background-image: url(assets/imagenes/foto-inicio.jpg);
+        background-image: url(./imagenes/foto-inicio.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: right top;
@@ -254,7 +254,7 @@
     
     
     #body-biografia{
-        background-image: url(assets/imagenes/foto-inicio-four.jpeg);
+        background-image: url(./imagenes/foto-inicio-four.jpeg);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position: right;
