@@ -160,6 +160,48 @@
         height: auto;    
         margin-left: 5px;
     }    
+
+    #subtitulo-reel{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .conteiner-contacto{
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name email"
+        "texto texto"
+        "none btn-enviar";
+        row-gap: 5px;
+        margin-left: 20px;
+        justify-items: end;
+        margin-bottom: 30px;
+    }
+
+    .name{
+        grid-area: name;
+    }
+    .email{
+        grid-area: email;
+    }
+    .text{
+        grid-area: texto;
+        width: 100%;
+    }
+    .btn-enviar{
+        grid-area: btn-enviar;
+        width: 150px;
+        
+    }
+    
+    .input{
+        width: 100%
+    }
 }
 
 @media (min-width: 600px) {
@@ -307,6 +349,14 @@
         margin-left: 210px;
     }
 
+    #subtitulo-reel{
+        font-size: 35px;
+    }
+
+    .conteiner-contacto{
+        width: 450px;
+    }
+    
 }
 
 
