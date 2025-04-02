@@ -1,0 +1,281 @@
+@media (min-width: 480px) {
+  body {
+    background-color: hsl(211, 29%, 82%);
+  }
+  #body-inicio {
+    background-image: url(./imagenes/foto-inicio-tres.jpg);
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: left center;
+    background-position-x: -250px;
+    background-position-y: 50px;
+    background-size: 1100px;
+  }
+  .navbar-inicio {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #titulo-inicio {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;
+    margin-left: 0px;
+    color: rgb(137, 129, 129);
+  }
+  #subtitulo-inicio {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px;
+    margin-top: -15px;
+    margin-bottom: 200px;
+    color: rgb(137, 129, 129);
+  }
+  .ul-footer {
+    list-style-type: none;
+  }
+  #body-biografia {
+    background-image: none;
+  }
+  .titulo-biografia {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .card-bio {
+    justify-items: center;
+  }
+  .card-group {
+    width: 300px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 450px 450px;
+    row-gap: 20px;
+  }
+  .card {
+    width: 300px;
+    height: auto;
+  }
+  .card-img-top {
+    height: 300px;
+    width: 300px;
+  }
+  #body-curriculum {
+    background-image: url(./imagenes/foto-inicio.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    background-size: 550px;
+  }
+  #h1-curriculum {
+    margin-left: 170px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .cv-subtitulo {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .list-group {
+    width: 400px;
+    margin-left: 10px;
+  }
+  .list-group-item {
+    background-color: rgb(200, 194, 194);
+  }
+  .table {
+    width: 400px;
+    margin-left: 10px;
+  }
+  .table th,
+  .table td {
+    background-color: rgb(200, 194, 194);
+  }
+  #titulo-book {
+    text-align: center;
+  }
+  .carousel-inner {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 70%;
+  }
+  .foto-book {
+    height: 500px;
+    width: auto;
+  }
+  #titulo-reel {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .reel-mp4 {
+    width: 480px;
+    height: auto;
+    margin-left: 5px;
+  }
+  #subtitulo-reel {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .conteiner-contacto {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name email" "texto texto" "none btn-enviar";
+    row-gap: 5px;
+    margin-left: 20px;
+    justify-items: end;
+    margin-bottom: 30px;
+  }
+  .name {
+    grid-area: name;
+  }
+  .email {
+    grid-area: email;
+  }
+  .text {
+    grid-area: texto;
+    width: 100%;
+  }
+  .btn-enviar {
+    grid-area: btn-enviar;
+    width: 150px;
+  }
+  .input {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  #body-inicio {
+    background-position-x: 0px;
+  }
+  #titulo-inicio {
+    color: black;
+  }
+  #subtitulo-inicio {
+    color: black;
+  }
+  .titulo-biografia {
+    text-align: left;
+    margin-left: 220px;
+  }
+  p {
+    margin-right: 10%;
+  }
+  .card-bio {
+    justify-items: left;
+  }
+  .card-group {
+    width: 750px;
+  }
+  .card {
+    width: 500px;
+  }
+  .card-img-top {
+    height: 250px;
+    width: 249px;
+  }
+  #body-curriculum {
+    background-size: 100%;
+  }
+  #h1-curriculum {
+    margin-left: 230px;
+  }
+  .list-group {
+    width: 600px;
+  }
+  .table {
+    width: 600px;
+  }
+  #titulo-reel {
+    margin-top: 20px;
+  }
+  .reel-mp4 {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+  }
+}
+@media (min-width: 1024px) {
+  #body-inicio {
+    background-attachment: fixed;
+    background-position-x: 500px;
+    background-position-y: 40px;
+    background-size: 1100px auto;
+  }
+  #titulo-inicio {
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+  #subtitulo-inicio {
+    margin: 190px;
+    margin-top: -15px;
+  }
+  #body-biografia {
+    background-image: url(./imagenes/foto-inicio-four.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right;
+    background-position-y: -20px;
+    background-size: 43%;
+  }
+  .titulo-biografia {
+    text-align: left;
+    margin-top: 40px;
+  }
+  p {
+    margin-right: 45%;
+  }
+  #body-curriculum {
+    background-size: 50%;
+    background-position-x: 110%;
+  }
+  #h1-curriculum {
+    margin-left: 300px;
+  }
+  .cv-subtitulo {
+    margin-left: 110px;
+  }
+  .list-group {
+    margin-left: 100px;
+  }
+  .table {
+    margin-left: 100px;
+  }
+  .foto-book {
+    height: 550px;
+  }
+  #titulo-reel {
+    margin-top: 10px;
+  }
+  video {
+    margin-left: 210px;
+  }
+  #subtitulo-reel {
+    font-size: 35px;
+  }
+  .conteiner-contacto {
+    width: 450px;
+  }
+}/*# sourceMappingURL=style.css.map */
