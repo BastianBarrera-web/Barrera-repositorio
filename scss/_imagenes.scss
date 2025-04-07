@@ -1,0 +1,58 @@
+@use "./variables" as *;
+@use "./media-queries" as*;
+
+@mixin margin-foto($margin-left, $margin-top, $margin_bottom, $width){
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+    margin-bottom: $margin_bottom;
+    width: $width;
+}
+
+/*foto curriculum*/
+.div-foto-cv{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 400px;
+    @include tablet{
+        width: 80%;
+    }
+    @include desktop {
+        width: 80%;
+        max-width: 450px;
+    }
+}
+
+.foto-cv{
+    @include margin-foto(0px, 10px, 20px, 100%);
+    height: auto;
+
+    @include tablet {
+        @include margin-foto(10px, 0px, 0px, 100%);
+        height: auto;
+        object-fit: cover;
+    }
+
+    @include desktop {
+        @include margin-foto(450px, -1250px, 0px, 100%);
+        height: auto;
+        object-fit: cover; 
+    }
+}
+
+/*foto biografia*/
+.div-foto-bio{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 400px;
+}
+
+.foto-bio{
+    @include margin-foto(0px, 15px, 25px, 100%);
+
+    @include tablet {
+        @include margin-foto(0px, 15px, 25px, 100%);
+    }
+    @include desktop {
+        @include margin-foto(450px, -750px, 0px, 110%);
+    }
+}

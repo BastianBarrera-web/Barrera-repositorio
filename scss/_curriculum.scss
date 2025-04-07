@@ -1,0 +1,81 @@
+@use "./variables" as *;
+@use "./media-queries" as *;
+
+#main-cv {
+    @include desktop{
+        margin-left: 50px;
+    }
+}
+/*titulos curriculum*/
+#h1-curriculum {
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: $font-primary;
+    text-align: center;
+    @include tablet{
+        margin-left: 0px;
+    }
+    @include desktop {
+        margin-left: 400px;
+        text-align: left;
+    }
+}
+
+.cv-subtitulo {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: $font-primary;
+    font-size: 30px;
+    margin-left: 40px;
+
+    @include tablet {
+        margin-left: 150px;
+    }
+
+    @include desktop {
+        margin-left: 100px;
+    }
+}
+
+/*lista curriculum*/
+.list-group{
+    width: 400px;
+    margin-left: 40px;
+
+    .list-group-item{
+        background-color: $secundary-color;
+    }
+
+    @include tablet {
+        width: 600px;
+        margin-left: 150px;
+    }
+    @include desktop {
+        margin-left: 100px;
+        width: 700px;
+        height: auto;
+    }
+}
+
+
+/*tabla curriculum*/
+.table{
+    width: 400px;
+    margin-left: 40px;
+
+    th,
+    td {
+        background-color: $secundary-color;
+    }
+
+    @include tablet{
+        width: 600px;
+        margin-left: 150px;
+    }
+
+    @include desktop {
+        margin-left: 100px;
+        width: 700px;
+        height: auto;
+    }
+}

@@ -1,0 +1,166 @@
+@use "./variables" as *;
+@use "./media-queries" as *;
+
+/*titulo*/
+#titulo-reel{
+    text-align: center;
+    font-family: $font-primary;
+    font-weight: bold;
+    margin-top: 30px;
+
+    @include tablet {
+        margin-top: 20px;
+    }
+
+    @include desktop {
+        margin-top: 10px;
+    }
+}
+
+/*reel*/
+.reel-mp4{
+    width: 480px;
+    height: auto;    
+    margin-left: 5px;
+
+    @include tablet {
+        width: 70%;
+        height: auto;    
+        margin-left: 15%;
+    }
+
+    @include desktop {
+        margin-left: 210px;
+    }
+}    
+
+/*contacto*/
+#subtitulo-reel{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: $font-primary;
+
+    @include desktop {
+        font-size: 35px;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .conteiner-contacto{
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name email"
+        "texto texto"
+        "none btn-enviar";
+        row-gap: 5px;
+        margin-left: 20px;
+        column-gap: 10px;
+        justify-items: end;
+        margin-bottom: 30px;
+        padding: 15px;
+        background-color: $secundary-color;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+        @include tablet {
+            width: 500px;
+            padding: 25px;
+            row-gap: 10px;
+        }
+        @include desktop {
+            width: 600px;
+            padding: 30px;
+            row-gap: 12px;
+        }
+    
+        .name {
+            grid-area: name;
+        }
+    
+        .email{
+            grid-area: email;
+        }
+        
+        .input{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid $third-color;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: $third-color;
+    
+            &:focus {
+                outline: none;
+                border-color: $secundary-color;
+                box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+        }
+        @include tablet {
+            font-size: 16px;
+        }
+    
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+        
+        .text{
+            grid-area: texto;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            resize: vertical;
+    
+            &:focus {
+                outline: none;
+                border-color: $secundary-color;
+                box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+              }
+    
+              @include tablet {
+                font-size: 16px;
+              }
+    
+              @include desktop {
+                font-size: 18px;
+              }
+        }
+    
+        .btn-enviar{
+            grid-area: btn-enviar;
+            width: 150px;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #007bff;
+            color: $third-color;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+    
+            &:hover {
+                background-color: #0056b3;
+              }
+        
+        }
+    
+        @include tablet {
+            font-size: 16px;
+        }
+    
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+}
+
