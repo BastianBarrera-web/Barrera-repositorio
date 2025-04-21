@@ -20,37 +20,46 @@
 
     .carousel-control-prev {
         left: 10px;
+    }
 
-        @include tablet {
-            left: 150px;
-        }
-
-        @include desktop {
-            left: 350px;
-        }
-      }
-      
-      .carousel-control-next {
+    .carousel-control-next {
         right: 10px;
+    }
 
-        @include tablet {
-            right: 150px;
-        }
+       /*fotos book*/
 
-        @include desktop {
-            right: 350px;
-        }
-      }
-
-      /*fotos book*/
-
-    .foto-book{
+       .foto-book{
         height: 500px;
         width: auto;
         margin: 0%;
+       }
 
-        @include desktop {
-            height: 550px;
+
+    @include tablet {
+
+        .carousel-control-prev{
+            left: 150px;
+        }
+
+        .carousel-control-next{
+            right: 150px;
         }
     }
+
+    @include desktop {
+
+        .carousel-control-prev{
+            left: 350px;
+        }
+
+        .carousel-control-next{
+            right: 350px;
+        }
+        
+           /*fotos book*/
+
+    .foto-book{
+        height: 550px;
+    }
+}
 }
