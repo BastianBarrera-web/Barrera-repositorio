@@ -2,55 +2,68 @@
 @use "./media-queries" as *;
 
 /*foto background inicio*/
-#body-inicio{
-    background-image: url(../imagenes/foto-inicio-tres.jpg);
-    background-repeat: no-repeat;
-    background-attachment: relative;
-    background-position: left center;
-    background-position-x: -250px;
-    background-position-y: 50px;
-    background-size: 1100px;
-    @include tablet {
-        background-position-x: 0px;
-    }
-    @include desktop {
-        background-attachment: fixed;
-        background-position-x: 500px;
-        background-position-y: 40px;
-        background-size: 1100px auto;
-    }
-}
+@media (min-width: 480px) {
 
-/*titulos inicio*/
-#titulo-inicio{
-    font-size: 50px;
-    font-weight: bold;
-    font-family: $font-primary;
-    margin-top: 150px;
-    margin-left: 0px;
-    color: $primary-color;
-    @include tablet {
-        color: black;
+    #body-inicio{
+        background-image: url(../imagenes/foto-inicio-tres.jpg);
+        background-repeat: no-repeat;
+        background-attachment: relative;
+        background-position: left center;
+        background-position-x: -250px;
+        background-position-y: 50px;
+        background-size: 1100px;
     }
-    @include desktop {
-        margin-top: 200px;
-        margin-left: 100px;
+    
+    /*titulos inicio*/
+    #titulo-inicio{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: $font-primary;
+        margin-top: 150px;
+        margin-left: 0px;
+        color: $primary-color;
     }
-}
-
-#subtitulo-inicio{
-    font-size: 35px;
-    font-weight: bold;
-    font-family: $font-primary;
-    margin: 100px;
-    margin-top: -15px; 
-    margin-bottom: 200px;
-    color: $primary-color;
-    @include tablet {
-        color: black;
-    }
-    @include desktop {
-        margin: 190px;
+    
+    #subtitulo-inicio{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: $font-primary;
+        margin: 100px;
         margin-top: -15px; 
+        margin-bottom: 200px;
+        color: $primary-color;
+    }
+    
+    @include tablet {
+        #body-inicio{
+            background-position-x: 0px;
+        }
+    
+        #titulo-inicio{
+            color: black;
+        }
+    
+        #subtitulo-inicio{
+            color: black;
+        }
+    }
+    
+    @include desktop {
+        #body-inicio{
+            background-attachment: fixed;
+            background-position-x: 500px;
+            background-position-y: 40px;
+            background-size: 1100px auto;
+        }
+    
+        #titulo-inicio{
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+    
+        #subtitulo-inicio{
+            margin: 190px;
+            margin-top: -15px;
+        }
     }
 }

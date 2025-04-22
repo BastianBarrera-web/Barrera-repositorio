@@ -1,81 +1,115 @@
 @use "./variables" as *;
 @use "./media-queries" as *;
 
-#main-cv {
-    @include desktop{
-        margin-left: 50px;
-    }
-}
-/*titulos curriculum*/
-#h1-curriculum {
-    margin-left: 20px;
-    font-weight: bold;
-    font-family: $font-primary;
-    text-align: center;
-    @include tablet{
-        margin-left: 0px;
-    }
-    @include desktop {
-        margin-left: 400px;
-        text-align: left;
-    }
-}
 
-.cv-subtitulo {
-    text-decoration: underline;
-    font-weight: bold;
-    font-family: $font-primary;
-    font-size: 30px;
-    margin-left: 40px;
+@media (min-width: 480px) {
+
+    /*main*/
+    #main-cv {
+        margin-left: 20px;
+
+        /*curriculum*/
+        #h1-curriculum {
+            font-weight: bold;
+            font-family: $font-primary;
+            text-align: center;
+        }
+
+        /*subtitulo*/
+        .cv-subtitulo {
+            text-decoration: underline;
+            font-weight: bold;
+            font-family: $font-primary;
+            font-size: 30px;
+            margin-left: 40px;
+        }
+
+        /*list*/
+        .list-group {
+            width: 400px;
+            margin-left: 40px;
+
+            .list-group-item {
+                background-color: $secundary-color;
+            }
+        }
+
+        /*table*/
+        .table {
+            width: 400px;
+            margin-left: 40px;
+
+            th,
+            td {
+                background-color: $secundary-color;
+            }
+        }
+    }
+
+    /*Tablet*/
 
     @include tablet {
-        margin-left: 150px;
+        /*main*/
+        #main-cv {
+            margin-left: 40px;
+
+            /*titulo*/
+            #h1-curriculum {
+                margin-left: 0;
+            }
+          
+            /*subtítulo*/
+            .cv-subtitulo {
+                margin-left: 150px;
+            }
+          
+            /*list*/
+            .list-group {
+                width: 600px;
+                margin-left: 150px;
+            }
+    
+            /*table*/
+            .table {
+                width: 600px;
+                margin-left: 150px;
+            }
+        }
     }
 
+    /*desktop*/
     @include desktop {
-        margin-left: 100px;
+
+        /*main*/
+        #main-cv {
+            margin-left: 50px;
+
+            /*titulo*/
+            #h1-curriculum {
+                margin-left: 400px;
+                text-align: left;
+            }
+          
+            /*subtitulo*/
+            .cv-subtitulo {
+                margin-left: 100px;
+            }
+          
+            /*list*/
+            .list-group {
+                width: 700px;
+                margin-left: 100px;
+                height: auto;
+            }
+          
+            /*table*/
+            .table {
+                width: 700px;
+                margin-left: 100px;
+                height: auto;
+            }
+        }
     }
 }
 
-/*lista curriculum*/
-.list-group{
-    width: 400px;
-    margin-left: 40px;
-
-    .list-group-item{
-        background-color: $secundary-color;
-    }
-
-    @include tablet {
-        width: 600px;
-        margin-left: 150px;
-    }
-    @include desktop {
-        margin-left: 100px;
-        width: 700px;
-        height: auto;
-    }
-}
-
-
-/*tabla curriculum*/
-.table{
-    width: 400px;
-    margin-left: 40px;
-
-    th,
-    td {
-        background-color: $secundary-color;
-    }
-
-    @include tablet{
-        width: 600px;
-        margin-left: 150px;
-    }
-
-    @include desktop {
-        margin-left: 100px;
-        width: 700px;
-        height: auto;
-    }
-}
+        

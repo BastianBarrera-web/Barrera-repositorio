@@ -17,7 +17,6 @@
     }
 
     /*botones de cambio de foto book*/
-
     .carousel-control-prev {
         left: 10px;
     }
@@ -26,40 +25,21 @@
         right: 10px;
     }
 
-       /*fotos book*/
+      /*fotos book*/
 
-       .foto-book{
+    .foto-book{
+
         height: 500px;
         width: auto;
         margin: 0%;
-       }
-
-
-    @include tablet {
-
-        .carousel-control-prev{
-            left: 150px;
-        }
-
-        .carousel-control-next{
-            right: 150px;
-        }
-    }
+    }        
 
     @include desktop {
-
-        .carousel-control-prev{
-            left: 350px;
-        }
-
-        .carousel-control-next{
-            right: 350px;
-        }
         
-           /*fotos book*/
+        /*fotos book*/
+        .foto-book{
+            height: 550px;
 
-    .foto-book{
-        height: 550px;
+        }
     }
-}
 }

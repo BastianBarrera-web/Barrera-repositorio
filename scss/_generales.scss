@@ -2,90 +2,104 @@
 @use "./media-queries" as *;
 
 /*body*/
-body{
-    background-color: $primary-color;
+// Fondo de la página
+body {
+  background-color: $primary-color;
 }
 
 /*footer*/
-.ul-footer{
-    list-style-type: none;
+.ul-footer {
+  list-style-type: none;
 }
 
-/*barra del menu*/
-.navbar{
+/*navbar*/
+.navbar {
     background-color: $secundary-color;
-/*contenedor*/
-    .container-fluid{
+
+    .container-fluid {
         width: 100%;
-        
-        @include tablet {
+
+        .navbar-brand{
+
+            font-size: 20px;
+            text-align: center;
+            margin-left: 200px;
+            width: auto;
+        }
+        .navbar-toggler {
+
+            margin-left: 250px;
+        }
+
+        .navbar-collapse {
+            flex-grow: 1;
+
+            .navbar-nav {
+                .nav-item {
+                    font-size: 20px;
+                    justify-items: center;
+            
+                }
+            }
+        }
+    }
+}
+
+/*Tablet styles*/
+@include tablet {
+
+    .navbar {
+        .container-fluid {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             margin-left: 100px;
             gap: 30px;
-            
-        }
-
-        @include desktop {
-            margin-left: 350px;
-            display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        }
-
-        /*inicio*/
-        .navbar-brand {
-            font-size: 20px;
-            text-align: center;
-            margin-left: 200px;
-            width: auto;
-
-            @include tablet{
+    
+            .navbar-brand {
                 font-size: 25px;
                 margin-left: 0px;
-                text-align: none;
+                text-align: start;
                 margin-right: 0px;
             }
-        }
-
-        /*desplegador de menu*/
-        .navbar-toggler{
-            @include tablet{
+    
+            .navbar-toggler {
                 margin-left: 450px;
             }
-        }
-
-
-        .navbar-collapse{
-            @include tablet{
-                flex-grow: 1;
-            }
-        }
-
-        /*paginas*/
-        .navbar-nav{
-
-            @include desktop{
-                width:100%;
-                display: flex;
-                justify-content: flex-start;
-                gap: 20px;
-            }
     
-            .nav-item{
-                font-size: 20px;
-                justify-items: center;
+            .navbar-collapse {
+                flex-grow: 1;
+    
+                .navbar-nav {
+                    .nav-item {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
 
-                @include tablet{
-                    font-size: 25px;
-                    
-                
 
-                    @include desktop{
+/*Desktop styles*/
+@include desktop {
+
+    .navbar {
+        .container-fluid {
+            margin-left: 350px;
+
+            .navbar-collapse {
+                .navbar-nav {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 20px;
+
+                    .nav-item {
                         margin-left: 10px;
                     }
-                } 
+                }
             }
         }
     }
