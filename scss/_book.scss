@@ -9,37 +9,100 @@
     }
 
     /*carrusel de fotos book*/
-    .carousel-inner{
+
+    .carousel{
         display: flex;
-        align-content: center;
-        width: 100%;
-        height: 70%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+        .carousel-inner{
+            display: flex;
+            width: 50%;
+            height: auto;
+            
+            /*fotos book*/
+            .fotos-hijo{
+                .foto-book{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        /*botones de cambio de foto book*/
+        .carousel-control-prev {
+            left: 40px;
+            position: absolute;
+        }
+        .carousel-control-next {
+            right: 40px;
+            position: absolute;
+        }
     }
 
-    /*botones de cambio de foto book*/
-    .carousel-control-prev {
-        left: 10px;
+    
+    @include tablet {
+
+        .carousel{
+            .carousel-inner{
+                display: flex;
+                width: 50%;
+                height: auto;
+                
+                /*fotos book*/
+                .fotos-hijo{
+                    .foto-book{
+                        width: 80%;
+                        height: auto;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            /*botones de cambio de foto book*/
+
+            .carousel-control-prev {
+                left: 150px;
+            }
+
+            .carousel-control-next {
+                right: 150px;
+            }
+        }
     }
-
-    .carousel-control-next {
-        right: 10px;
-    }
-
-      /*fotos book*/
-
-    .foto-book{
-
-        height: 500px;
-        width: auto;
-        margin: 0%;
-    }        
 
     @include desktop {
-        
-        /*fotos book*/
-        .foto-book{
-            height: 550px;
 
+        .carousel{
+            .carousel-inner{
+                width: 100%;
+                max-width: 100%;
+                
+                /*fotos book*/
+                .fotos-hijo{
+                    .foto-book{
+                        width: 30%;
+                        height: auto;
+            
+                    }
+                }
+            }
+
+            /*botones de cambio de foto book*/
+
+            .carousel-control-prev {
+                left: 300px;
+                max-width: 100%;
+                overflow: hidden;
+                position: absolute;
+            }
+
+            .carousel-control-next {
+                right: 300px;
+            }
         }
     }
 }

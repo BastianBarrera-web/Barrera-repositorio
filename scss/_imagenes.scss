@@ -16,21 +16,40 @@
         margin: 0 auto;
         width: 70%;
         max-width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        @include margin-foto(65px, 10px, 20px, 100%);
 
         .foto-cv{
-            @include margin-foto(0px, 10px, 20px, 100%);
+            width: 350px;
+            max-width: 100%;
             height: auto;
+            margin: 0 auto;
         }
     }
 
     /*foto biografia*/
     .div-foto-bio{
+        @include margin-foto(0px, 15px, 25px, 100%);
         margin: 0 auto;
         width: 70%;
         max-width: 400px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
 
         .foto-bio{
-            @include margin-foto(0px, 15px, 25px, 100%);
+            width: 300px;
+            max-width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
         }
     }
 
@@ -39,38 +58,48 @@
         /*foto curriculum*/
         .div-foto-cv{
             width: 80%;
+            overflow: hidden;
+            max-width: 400px;
+            @include margin-foto(300px, 0px, 0px, 100%);
 
             .foto-cv{
-                @include margin-foto(10px, 0px, 0px, 100%);
-                height: auto;
-                object-fit: cover;
+                width: 100%;
             }
         }
 
         /*foto biografia*/
         .div-foto-bio{
+            @include margin-foto(250px, 15px, 25px, 100%);
+            overflow: hidden;
+
             .foto-bio{
-                @include margin-foto(0px, 15px, 25px, 100%);
+                width: 400px;
             }
         }
 
         @include desktop {
             /*foto curriculum*/
             .div-foto-cv{
-                width: 80%;
-                max-width: 450px;
+                width: 100%;
+                max-width: 500px;
+                @include margin-foto(1000px, -950px, 500px, 100%);
 
                 .foto-cv{
-                    @include margin-foto(450px, -1250px, 0px, 100%);
-                    height: auto;
-                    object-fit: cover;            
+                    @include margin-foto(0px, 0px, 0px, 100%);
+                    width: 80%;  
+                    max-width: 100%;       
                 }
             }
 
             /*foto biografia*/
             .div-foto-bio{
+                @include margin-foto(1000px, -680px, 500px, 100%);
+                width: 100%;
+                max-width: 400px;
+
                 .foto-bio{
-                    @include margin-foto(450px, -750px, 0px, 110%);
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }

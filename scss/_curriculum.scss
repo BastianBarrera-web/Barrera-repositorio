@@ -21,23 +21,28 @@
             font-weight: bold;
             font-family: $font-primary;
             font-size: 30px;
-            margin-left: 40px;
+            margin-left: 25px;
         }
 
         /*list*/
         .list-group {
             width: 400px;
-            margin-left: 40px;
+            max-width: 100%;
+            margin-left: 25px;
+            overflow: hidden;
 
             .list-group-item {
                 background-color: $secundary-color;
+                max-width: 100%;
+                overflow: hidden;
             }
         }
 
         /*table*/
         .table {
             width: 400px;
-            margin-left: 40px;
+            margin-left: 25px;
+            max-width: 100%;
 
             th,
             td {
@@ -65,13 +70,15 @@
           
             /*list*/
             .list-group {
-                width: 600px;
+                width: 70%;
                 margin-left: 150px;
+                max-width: 100%;
+                overflow: hidden;
             }
     
             /*table*/
             .table {
-                width: 600px;
+                width: 70%;
                 margin-left: 150px;
             }
         }
@@ -111,5 +118,4 @@
         }
     }
 }
-
-        
+       
