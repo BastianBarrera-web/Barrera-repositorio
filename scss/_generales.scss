@@ -16,6 +16,7 @@ body {
 /*navbar*/
 .navbar {
     background-color: $secundary-color;
+    overflow: hidden;
 
     .container-fluid {
         width: 100%;
