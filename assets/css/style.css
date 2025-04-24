@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*foto background inicio*/
-@media (min-width: 480px) {
+@media (min-width: 320px) {
+  /*foto background inicio*/
   #body-inicio {
     background-image: url(../imagenes/foto-inicio-tres.jpg);
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
     color: rgb(154, 166, 178);
   }
 }
-@media screen and (min-width: 480px) and (min-width: 600px) {
+@media screen and (min-width: 320px) and (min-width: 600px) {
   #body-inicio {
     background-position-x: 0px;
   }
@@ -40,7 +40,7 @@
     color: black;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 1024px) {
   #body-inicio {
     background-attachment: fixed;
     background-position-x: 500px;
@@ -56,7 +56,7 @@
     margin-top: -15px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   /*main biografía*/
   .main-bio {
     margin-left: 5px;
@@ -99,7 +99,7 @@
   }
   /*Desktop*/
 }
-@media screen and (min-width: 480px) and (min-width: 600px) {
+@media screen and (min-width: 320px) and (min-width: 600px) {
   .main-bio {
     margin-left: 40px;
   }
@@ -126,7 +126,7 @@
     width: 249px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 1024px) {
   /*main bio*/
   .main-bio {
     margin-left: 50px;
@@ -146,7 +146,7 @@
     margin-left: 40px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   /*main*/
   #main-cv {
     margin-left: 20px;
@@ -190,7 +190,7 @@
   /*Tablet*/
   /*desktop*/
 }
-@media screen and (min-width: 480px) and (min-width: 600px) {
+@media screen and (min-width: 320px) and (min-width: 600px) {
   /*main*/
   #main-cv {
     margin-left: 40px;
@@ -216,7 +216,7 @@
     margin-left: 150px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 1024px) {
   /*main*/
   #main-cv {
     margin-left: 50px;
@@ -243,7 +243,7 @@
     height: auto;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   /*titulo book*/
   #titulo-book {
     text-align: center;
@@ -276,7 +276,7 @@
     position: absolute;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 600px) {
+@media screen and (min-width: 320px) and (min-width: 600px) {
   .carousel-inner {
     display: flex;
     width: 50%;
@@ -296,7 +296,7 @@
     right: 150px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 1024px) {
   .carousel-inner {
     width: 100%;
     max-width: 100%;
@@ -317,7 +317,7 @@
     right: 300px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   /*titulo*/
   #titulo-reel {
     text-align: center;
@@ -412,7 +412,7 @@
     background-color: #0056b3;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 600px) {
+@media screen and (min-width: 320px) and (min-width: 600px) {
   #titulo-reel {
     margin-top: 20px;
   }
@@ -436,7 +436,7 @@
     font-size: 16px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 1024px) {
   #titulo-reel {
     margin-top: 10px;
   }
@@ -461,49 +461,49 @@
     font-size: 18px;
   }
 }
-/*body*/
-body {
-  background-color: rgb(154, 166, 178);
-  overflow-x: hidden;
+@media (min-width: 320px) {
+  /*body*/
+  body {
+    background-color: rgb(154, 166, 178);
+    overflow-x: hidden;
+  }
+  /*footer*/
+  .ul-footer {
+    list-style-type: none;
+  }
+  /*navbar*/
+  .navbar {
+    background-color: rgb(217, 234, 253);
+    overflow: hidden;
+  }
+  .navbar .container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 200px;
+    width: auto;
+    margin-right: 20px;
+  }
+  .navbar .container-fluid .navbar-toggler {
+    margin-left: auto;
+  }
+  .navbar .container-fluid .navbar-collapse {
+    flex-grow: 0;
+    width: 100%;
+  }
+  .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+    font-size: 20px;
+    justify-items: center;
+  }
+  /*Tablet styles*/
+  /*Desktop styles*/
 }
-
-/*footer*/
-.ul-footer {
-  list-style-type: none;
-}
-
-/*navbar*/
-.navbar {
-  background-color: rgb(217, 234, 253);
-  overflow: hidden;
-}
-.navbar .container-fluid {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar .container-fluid .navbar-brand {
-  font-size: 20px;
-  text-align: left;
-  margin-left: 200px;
-  width: auto;
-  margin-right: 20px;
-}
-.navbar .container-fluid .navbar-toggler {
-  margin-left: auto;
-}
-.navbar .container-fluid .navbar-collapse {
-  flex-grow: 0;
-  width: 100%;
-}
-.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
-  font-size: 20px;
-  justify-items: center;
-}
-
-/*Tablet styles*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 320px) and (min-width: 600px) {
   .navbar .container-fluid {
     margin-left: 100px;
     gap: 30px;
@@ -530,8 +530,7 @@ body {
     font-size: 25px;
   }
 }
-/*Desktop styles*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 1024px) {
   .navbar .container-fluid {
     margin-left: 350px;
     display: flex;
@@ -550,7 +549,7 @@ body {
     margin-left: 10px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   /*foto curriculum*/
   .div-foto-cv {
     margin: 0 auto;
@@ -595,7 +594,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 600px) {
+@media screen and (min-width: 320px) and (min-width: 600px) {
   /*foto curriculum*/
   .div-foto-cv {
     width: 80%;
@@ -621,7 +620,7 @@ body {
     width: 400px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 600px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 600px) and (min-width: 1024px) {
   /*foto curriculum*/
   .div-foto-cv {
     width: 100%;

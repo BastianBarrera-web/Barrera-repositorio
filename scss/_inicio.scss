@@ -1,9 +1,10 @@
 @use "./variables" as *;
 @use "./media-queries" as *;
 
-/*foto background inicio*/
-@media (min-width: 480px) {
 
+@media (min-width: 320px) {
+
+    /*foto background inicio*/
     #body-inicio{
         background-image: url(../imagenes/foto-inicio-tres.jpg);
         background-repeat: no-repeat;

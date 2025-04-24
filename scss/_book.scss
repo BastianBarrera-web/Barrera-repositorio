@@ -1,7 +1,7 @@
 @use "./variables" as *;
 @use "./media-queries" as *;
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
 
     /*titulo book*/
     #titulo-book{

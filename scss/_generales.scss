@@ -1,113 +1,121 @@
 @use "./variables" as *;
 @use "./media-queries" as *;
 
-/*body*/
-// Fondo de la página
-body {
-  background-color: $primary-color;
-  overflow-x: hidden;
-}
 
-/*footer*/
-.ul-footer {
-  list-style-type: none;
-}
+@media (min-width: 320px) {
 
-/*navbar*/
-.navbar {
-    background-color: $secundary-color;
-    overflow: hidden;
-
-    .container-fluid {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .navbar-brand{
-
-            font-size: 20px;
-            text-align: left;
-            margin-left: 200px;
-            width: auto;
-            margin-right: 20px;
-        }
-        .navbar-toggler {
-            margin-left: auto;
-        }
-
-        .navbar-collapse {
-            flex-grow: 0;
-            width: 100%;
-
-            .navbar-nav {
-                .nav-item {
-                    font-size: 20px;
-                    justify-items: center;
-            
-                }
-            }
-        }
+    /*body*/
+    body {
+        background-color: $primary-color;
+        overflow-x: hidden;
     }
-}
 
-/*Tablet styles*/
-@include tablet {
+    /*footer*/
+    .ul-footer {
+        list-style-type: none;
+    }
 
+    /*navbar*/
     .navbar {
-        .container-fluid {
+        background-color: $secundary-color;
+        overflow: hidden;
 
-            margin-left: 100px;
-            gap: 30px;
-    
-            .navbar-brand {
-                font-size: 25px;
-                margin-left: 0px;
-                text-align: start;
-                margin-right: 20px;
+        .container-fluid {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navbar-brand{
+
+                font-size: 20px;
+                  text-align: left;
+                  margin-left: 200px;
+                  width: auto;
+                  margin-right: 20px;
             }
-    
+
             .navbar-toggler {
                 margin-left: auto;
-                margin-right: 30px;
             }
-    
+
             .navbar-collapse {
+                flex-grow: 0;
                 width: 100%;
-                margin-left: -30px;
-              
+
                 .navbar-nav {
-                    display: flex;
-                    justify-content: center;
+
                     .nav-item {
-                        font-size: 25px;
+                        font-size: 20px;
+                        justify-items: center;
+                  
                     }
                 }
             }
         }
     }
-}
 
+    /*Tablet styles*/
+    @include tablet {
 
-/*Desktop styles*/
-@include desktop {
+        .navbar {
+            .container-fluid {
+                margin-left: 100px;
+                gap: 30px;
 
-    .navbar {
-        .container-fluid {
-            margin-left: 350px;
-            display: flex;
-            align-items: center;
+                .navbar-brand {
+                    font-size: 25px;
+                    margin-left: 0px;
+                    text-align: start;
+                    margin-right: 20px;
+                }
 
-            .navbar-collapse {
-                overflow: hidden;
-                .navbar-nav {
+                .navbar-toggler {
+                    margin-left: auto;
+                    margin-right: 30px;
+                }
+
+                .navbar-collapse {
                     width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    gap: 20px;
+                    margin-left: -30px;
 
-                    .nav-item {
-                        margin-left: 10px;
+                    .navbar-nav {
+                        display: flex;
+                        justify-content: center;
+                        .nav-item {
+                            font-size: 25px;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*Desktop styles*/
+    @include desktop {
+
+        .navbar {
+            .container-fluid {
+                margin-left: 350px;
+                display: flex;
+                align-items: center;
+
+                .navbar-collapse {
+                    overflow: hidden;
+                    .navbar-nav {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 20px;
+
+                        .nav-item {
+                            margin-left: 10px;
+                        }
+
+
+
+                 
                     }
                 }
             }
