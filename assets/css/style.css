@@ -184,11 +184,16 @@
   #main-cv .table {
     width: 80%;
     margin-left: 25px;
+    margin-right: auto;
     max-width: 100%;
+    overflow: hidden;
   }
   #main-cv .table th,
   #main-cv .table td {
     background-color: rgb(217, 234, 253);
+    max-width: 100%;
+    overflow: hidden;
+    width: auto;
   }
   /*tablet styles*/
   /*desktop styles*/
@@ -573,7 +578,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-left: 65px;
+    margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;
