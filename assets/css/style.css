@@ -28,6 +28,8 @@
     margin-bottom: 200px;
     color: rgb(154, 166, 178);
   }
+  /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   #body-inicio {
@@ -40,7 +42,7 @@
     color: black;
   }
 }
-@media screen and (min-width: 320px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
   #body-inicio {
     background-attachment: fixed;
     background-position-x: 500px;
@@ -97,7 +99,8 @@
     height: 300px;
     width: 300px;
   }
-  /*Desktop*/
+  /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   .main-bio {
@@ -126,7 +129,7 @@
     width: 249px;
   }
 }
-@media screen and (min-width: 320px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
   /*main bio*/
   .main-bio {
     margin-left: 50px;
@@ -164,11 +167,11 @@
     text-decoration: underline;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 25px;
   }
   #main-cv .list-group {
-    width: 400px;
+    width: 80%;
     max-width: 100%;
     margin-left: 25px;
     overflow: hidden;
@@ -179,7 +182,7 @@
     overflow: hidden;
   }
   #main-cv .table {
-    width: 400px;
+    width: 80%;
     margin-left: 25px;
     max-width: 100%;
   }
@@ -187,8 +190,8 @@
   #main-cv .table td {
     background-color: rgb(217, 234, 253);
   }
-  /*Tablet*/
-  /*desktop*/
+  /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   /*main*/
@@ -203,20 +206,21 @@
     margin-left: 0;
   }
   #main-cv .cv-subtitulo {
-    margin-left: 150px;
+    margin-left: 100px;
+    font-size: 30px;
   }
   #main-cv .list-group {
     width: 70%;
-    margin-left: 150px;
+    margin-left: 100px;
     max-width: 100%;
     overflow: hidden;
   }
   #main-cv .table {
     width: 70%;
-    margin-left: 150px;
+    margin-left: 100px;
   }
 }
-@media screen and (min-width: 320px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
   /*main*/
   #main-cv {
     margin-left: 50px;
@@ -275,6 +279,8 @@
     right: 40px;
     position: absolute;
   }
+  /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   .carousel-inner {
@@ -296,7 +302,7 @@
     right: 150px;
   }
 }
-@media screen and (min-width: 320px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
   .carousel-inner {
     width: 100%;
     max-width: 100%;
@@ -411,6 +417,8 @@
   .contacto .conteiner-contacto .btn-enviar:hover {
     background-color: #0056b3;
   }
+  /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   #titulo-reel {
@@ -436,7 +444,7 @@
     font-size: 16px;
   }
 }
-@media screen and (min-width: 320px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
   #titulo-reel {
     margin-top: 10px;
   }
@@ -479,15 +487,15 @@
   .navbar .container-fluid {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   .navbar .container-fluid .navbar-brand {
     font-size: 20px;
-    text-align: left;
-    margin-left: 200px;
+    text-align: center;
+    margin-left: 44%;
     width: auto;
-    margin-right: 20px;
+    margin-right: 0;
   }
   .navbar .container-fluid .navbar-toggler {
     margin-left: auto;
@@ -500,17 +508,18 @@
     font-size: 20px;
     justify-items: center;
   }
-  /*Tablet styles*/
-  /*Desktop styles*/
+  /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   .navbar .container-fluid {
     margin-left: 100px;
     gap: 30px;
+    justify-content: space-between;
   }
   .navbar .container-fluid .navbar-brand {
     font-size: 25px;
-    margin-left: 0px;
+    margin-left: 40%;
     text-align: start;
     margin-right: 20px;
   }
@@ -530,11 +539,15 @@
     font-size: 25px;
   }
 }
-@media screen and (min-width: 320px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
   .navbar .container-fluid {
-    margin-left: 350px;
+    margin-left: 22%;
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+  .navbar .container-fluid .navbar-brand {
+    margin-left: 0;
   }
   .navbar .container-fluid .navbar-collapse {
     overflow: hidden;
@@ -566,10 +579,10 @@
     width: 100%;
   }
   .div-foto-cv .foto-cv {
-    width: 350px;
+    width: 300px;
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin-right: 15%;
   }
   /*foto biografia*/
   .div-foto-bio {
@@ -593,6 +606,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   /*foto curriculum*/
@@ -600,7 +615,7 @@
     width: 80%;
     overflow: hidden;
     max-width: 400px;
-    margin-left: 300px;
+    margin-left: 200px;
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
@@ -620,7 +635,7 @@
     width: 400px;
   }
 }
-@media screen and (min-width: 320px) and (min-width: 600px) and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
   /*foto curriculum*/
   .div-foto-cv {
     width: 100%;
@@ -631,12 +646,9 @@
     width: 100%;
   }
   .div-foto-cv .foto-cv {
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 100%;
     width: 80%;
     max-width: 100%;
+    margin-right: 0;
   }
   /*foto biografia*/
   .div-foto-bio {

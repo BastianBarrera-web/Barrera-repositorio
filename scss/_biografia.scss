@@ -53,6 +53,7 @@
     } 
 
 
+    /*tablet styles*/
     @include tablet {
 
         // Sección principal de la biografía
@@ -88,8 +89,7 @@
         }     
     }
 
-    /*Desktop*/
-
+    /*desktop styles*/
     @include desktop {
 
         /*main bio*/

@@ -34,7 +34,8 @@
         margin-bottom: 200px;
         color: $primary-color;
     }
-    
+
+    /*tablet styles*/
     @include tablet {
         #body-inicio{
             background-position-x: 0px;
@@ -48,7 +49,8 @@
             color: black;
         }
     }
-    
+
+    /*desktop styles*/
     @include desktop {
         #body-inicio{
             background-attachment: fixed;
