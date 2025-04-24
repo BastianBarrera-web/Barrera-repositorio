@@ -46,63 +46,59 @@
     
     @include tablet {
 
-        .carousel{
-            .carousel-inner{
-                display: flex;
-                width: 50%;
-                height: auto;
-                
-                /*fotos book*/
-                .fotos-hijo{
-                    .foto-book{
-                        width: 80%;
-                        height: auto;
-                        margin-bottom: 30px;
-                    }
+        .carousel-inner{
+            display: flex;
+            width: 50%;
+            height: auto;
+            
+            /*fotos book*/
+            .fotos-hijo{
+                .foto-book{
+                    width: 80%;
+                    height: auto;
+                    margin-bottom: 30px;
                 }
             }
-
-            /*botones de cambio de foto book*/
-
-            .carousel-control-prev {
-                left: 150px;
-            }
-
-            .carousel-control-next {
-                right: 150px;
-            }
         }
+
+        /*botones de cambio de foto book*/
+        .carousel-control-prev {
+            left: 150px;
+        }
+
+        .carousel-control-next {
+            right: 150px;
+        }
+        
     }
 
     @include desktop {
 
-        .carousel{
-            .carousel-inner{
-                width: 100%;
-                max-width: 100%;
-                
-                /*fotos book*/
-                .fotos-hijo{
-                    .foto-book{
-                        width: 30%;
-                        height: auto;
+        .carousel-inner{
+            width: 100%;
+            max-width: 100%;
             
-                    }
+            /*fotos book*/
+            .fotos-hijo{
+                .foto-book{
+                    width: 30%;
+                    height: auto;
+        
                 }
             }
+        }
 
-            /*botones de cambio de foto book*/
+        /*botones de cambio de foto book*/
 
-            .carousel-control-prev {
-                left: 300px;
-                max-width: 100%;
-                overflow: hidden;
-                position: absolute;
-            }
+        .carousel-control-prev {
+            left: 300px;
+            max-width: 100%;
+            overflow: hidden;
+            position: absolute;
+        }
 
-            .carousel-control-next {
-                right: 300px;
-            }
+        .carousel-control-next {
+            right: 300px;
         }
     }
 }

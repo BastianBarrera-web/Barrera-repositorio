@@ -277,47 +277,43 @@
   }
 }
 @media screen and (min-width: 480px) and (min-width: 600px) {
-  .carousel {
-    /*botones de cambio de foto book*/
-  }
-  .carousel .carousel-inner {
+  .carousel-inner {
     display: flex;
     width: 50%;
     height: auto;
     /*fotos book*/
   }
-  .carousel .carousel-inner .fotos-hijo .foto-book {
+  .carousel-inner .fotos-hijo .foto-book {
     width: 80%;
     height: auto;
     margin-bottom: 30px;
   }
-  .carousel .carousel-control-prev {
+  /*botones de cambio de foto book*/
+  .carousel-control-prev {
     left: 150px;
   }
-  .carousel .carousel-control-next {
+  .carousel-control-next {
     right: 150px;
   }
 }
 @media screen and (min-width: 480px) and (min-width: 1024px) {
-  .carousel {
-    /*botones de cambio de foto book*/
-  }
-  .carousel .carousel-inner {
+  .carousel-inner {
     width: 100%;
     max-width: 100%;
     /*fotos book*/
   }
-  .carousel .carousel-inner .fotos-hijo .foto-book {
+  .carousel-inner .fotos-hijo .foto-book {
     width: 30%;
     height: auto;
   }
-  .carousel .carousel-control-prev {
+  /*botones de cambio de foto book*/
+  .carousel-control-prev {
     left: 300px;
     max-width: 100%;
     overflow: hidden;
     position: absolute;
   }
-  .carousel .carousel-control-next {
+  .carousel-control-next {
     right: 300px;
   }
 }
