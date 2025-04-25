@@ -153,6 +153,7 @@
   /*main*/
   #main-cv {
     margin-left: 20px;
+    overflow: hidden;
     /*curriculum*/
     /*subtitulo*/
     /*list*/
@@ -228,8 +229,8 @@
   }
   #main-cv .table th,
   #main-cv .table td {
-    padding-right: auto;
-    padding-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
@@ -578,23 +579,22 @@
   /*foto curriculum*/
   .div-foto-cv {
     margin: 0 auto;
-    width: 70%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 70%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;
   }
   .div-foto-cv .foto-cv {
-    width: 250px;
+    width: 350px;
     max-width: 100%;
     height: auto;
-    margin-right: 15%;
   }
   /*foto biografia*/
   .div-foto-bio {
@@ -624,13 +624,14 @@
 @media screen and (min-width: 320px) and (min-width: 600px) {
   /*foto curriculum*/
   .div-foto-cv {
-    width: 80%;
+    width: 70%;
     overflow: hidden;
     max-width: 400px;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
+    margin-right: 40%;
   }
   .div-foto-cv .foto-cv {
     width: 100%;

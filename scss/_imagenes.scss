@@ -14,20 +14,21 @@
     /*foto curriculum*/
     .div-foto-cv{
         margin: 0 auto;
-        width: 70%;
-        max-width: 100%;
+        width: 100%;
+        max-width: 70%;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        @include margin-foto(30px, 10px, 20px, 100%);
+        @include margin-foto(60px, 10px, 20px, 100%);
 
         .foto-cv{
-            width: 250px;
+            width: 350px;
             max-width: 100%;
             height: auto;
-            margin-right: 15%;
+           
+      
         }
     }
 
@@ -57,10 +58,11 @@
 
         /*foto curriculum*/
         .div-foto-cv{
-            width: 80%;
+            width: 70%;
             overflow: hidden;
             max-width: 400px;
-            @include margin-foto(200px, 0px, 0px, 100%);
+            @include margin-foto(150px, 0px, 0px, 100%);
+            margin-right: 40%;
 
             .foto-cv{
                 width: 100%;
