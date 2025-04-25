@@ -41,17 +41,18 @@
         /*table*/
         .table {
             width: 80%;
-            margin-left: 25px;
-            margin-right: auto;
             max-width: 100%;
+            margin-left: 25px;
+            margin-right: 10%;
             overflow: hidden;
-
+            border-radius: 0.375rem;
+   
             th,
             td {
                 background-color: $secundary-color;
                 max-width: 100%;
                 overflow: hidden;
-                width: auto;
+                padding-right: 0%;
             }
         }
     }
@@ -86,6 +87,11 @@
             .table {
                 width: 70%;
                 margin-left: 100px;
+
+                th,
+                td {
+                    padding-right: auto;
+                }
             }
         }
     }
