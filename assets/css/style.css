@@ -195,6 +195,7 @@
     max-width: 100%;
     overflow: hidden;
     padding-right: 0%;
+    padding-left: 0%;
   }
   /*tablet styles*/
   /*desktop styles*/
@@ -228,6 +229,7 @@
   #main-cv .table th,
   #main-cv .table td {
     padding-right: auto;
+    padding-left: auto;
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
@@ -583,13 +585,13 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;
   }
   .div-foto-cv .foto-cv {
-    width: 300px;
+    width: 250px;
     max-width: 100%;
     height: auto;
     margin-right: 15%;
