@@ -46,46 +46,87 @@
 
     <main>
       <h1 id="titulo-book" class="text-center">Book Actoral</h1>
-      <div id="carouselExample" class="carousel slide fotos-padre">
-        <div class="carousel-inner div-fotos">
-          <div class="carousel-item active fotos-hijo">
-            <img src="../assets/imagenes/book-ocho.jpg" class="d-block mx-auto foto-book animate__animated animate__fadeIn" alt="foto-uno">
+      <section class="section-book">
+        <div id="carouselExample" class="carousel slide carousel-book">
+          <div class="carousel-inner carousel-inner-book div-fotos">
+            <div class="carousel-item active fotos-hijo">
+              <img src="../assets/imagenes/book-ocho.jpg" class="d-block mx-auto foto-book animate__animated animate__fadeIn" alt="foto-uno">
+            </div>
+            <div class="carousel-item fotos-hijo">
+              <img src="../assets/imagenes/book-dos.jpg" class="d-block mx-auto foto-book" alt="foto-dos">
+            </div>
+            <div class="carousel-item fotos-hijo">
+              <img src="../assets/imagenes/book-tres.jpg" class="d-block mx-auto foto-book" alt="foto-tres">
+            </div>
+            <div class="carousel-item fotos-hijo">
+              <img src="../assets/imagenes/book-siete.JPG" class="d-block mx-auto foto-book" alt="foto-cuatro">
+            </div>
+            <div class="carousel-item fotos-hijo">
+              <img src="../assets/imagenes/book-cuatro.jpg" class="d-block mx-auto foto-book" alt="foto-cinco">
+            </div>
+            <div class="carousel-item fotos-hijo">
+              <img src="../assets/imagenes/book-nueve.jpg" class="d-block mx-auto foto-book" alt="foto-seis">
+            </div>
+            <div class="carousel-item fotos-hijo">
+              <img src="../assets/imagenes/book-diez.jpg" class="d-block mx-auto foto-book" alt="foto-siete">
+            </div>
+            <div class="carousel-item fotos-hijo">
+              <img src="../assets/imagenes/book-cinco.jpeg" class="d-block mx-auto foto-book" alt="foto-ocho">
+            </div>
           </div>
-          <div class="carousel-item fotos-hijo">
-            <img src="../assets/imagenes/book-dos.jpg" class="d-block mx-auto foto-book" alt="foto-dos">
-          </div>
-          <div class="carousel-item fotos-hijo">
-            <img src="../assets/imagenes/book-tres.jpg" class="d-block mx-auto foto-book" alt="foto-tres">
-          </div>
-          <div class="carousel-item fotos-hijo">
-            <img src="../assets/imagenes/book-siete.JPG" class="d-block mx-auto foto-book" alt="foto-cuatro">
-          </div>
-          <div class="carousel-item fotos-hijo">
-            <img src="../assets/imagenes/book-cuatro.jpg" class="d-block mx-auto foto-book" alt="foto-cinco">
-          </div>
-          <div class="carousel-item fotos-hijo">
-            <img src="../assets/imagenes/book-nueve.jpg" class="d-block mx-auto foto-book" alt="foto-seis">
-          </div>
-          <div class="carousel-item fotos-hijo">
-            <img src="../assets/imagenes/book-diez.jpg" class="d-block mx-auto foto-book" alt="foto-siete">
-          </div>
-          <div class="carousel-item fotos-hijo">
-            <img src="../assets/imagenes/book-cinco.jpeg" class="d-block mx-auto foto-book" alt="foto-ocho">
-          </div>
-
+          
+          <button class="carousel-control-prev button-prev-book" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next button-next-book" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </section>
+
+      <h2 id="h2-dde">Detrás de Escena</h2>
+      <section class="section-dde">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-dde">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner carousel-inner-dde">
+            <div class="carousel-item active fotos-ddes">
+              <img src="../assets/imagenes/dde-guia.jpeg" class="d-block w-100 foto-dde" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Guía Para Abducidos</h4>
+              </div>
+            </div>
+            <div class="carousel-item fotos-ddes">
+              <video src="../assets/imagenes/dde-guia-video.mp4" autoplay muted loop class="d-block w-100 foto-dde" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Guía Para Abducidos</h4>
+              </div>
+            </div>
+            <div class="carousel-item fotos-ddes">
+              <img src="../assets/imagenes/dde-hilando-noticias.jpeg" class="d-block w-100 foto-dde" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Hilando Noticias</h4>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev button-prev-dde" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next button-next-dde" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </main>
 
-    <footer id="footer-inicio">
+    <footer id="footer-book">
       <ul class="ul-footer">
         <li><strong>Contacto:</strong>bastianvbp@gmail.com</li>
         <li><strong>instagram:</strong>@pastian_barrera</li>

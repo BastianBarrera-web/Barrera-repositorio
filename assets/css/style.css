@@ -15,18 +15,25 @@
     font-size: 50px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 166, 178);
     margin-top: 150px;
     margin-left: 0px;
-    color: rgb(154, 166, 178);
   }
   #subtitulo-inicio {
     font-size: 35px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 166, 178);
     margin: 100px;
     margin-top: -15px;
     margin-bottom: 200px;
+  }
+  #div-bienvenida {
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(154, 166, 178);
+    font-weight: bold;
+    margin-top: -100px;
+    margin-bottom: 150px;
   }
   /*tablet styles*/
   /*desktop styles*/
@@ -37,9 +44,15 @@
   }
   #titulo-inicio {
     color: black;
+    margin-left: 30px;
   }
   #subtitulo-inicio {
     color: black;
+    margin-left: 120px;
+  }
+  #div-bienvenida {
+    color: black;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
@@ -54,8 +67,12 @@
     margin-left: 100px;
   }
   #subtitulo-inicio {
-    margin: 190px;
+    margin-left: 200px;
     margin-top: -15px;
+  }
+  #div-bienvenida {
+    margin-left: 100px;
+    margin-top: -140px;
   }
 }
 @media (min-width: 320px) {
@@ -147,6 +164,10 @@
   /*Cards*/
   .card-bio .card-group {
     margin-left: 40px;
+  }
+  /*footer*/
+  #footer-biografia {
+    margin-top: -350px;
   }
 }
 @media (min-width: 320px) {
@@ -259,81 +280,136 @@
     margin-left: 100px;
     height: auto;
   }
+  /*footer cv*/
+  #footer-cv {
+    margin-top: -100px;
+  }
 }
 @media (min-width: 320px) {
   /*titulo book*/
   #titulo-book {
     text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
   }
   /*carrusel de fotos book*/
-  .carousel {
+  .carousel-book {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    /*botones de cambio de foto book*/
   }
-  .carousel .carousel-inner {
-    display: flex;
+  .carousel-book .carousel-inner-book {
     width: 50%;
     height: auto;
     /*fotos book*/
   }
-  .carousel .carousel-inner .fotos-hijo .foto-book {
+  .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
   }
-  .carousel .carousel-control-prev {
-    left: 40px;
-    position: absolute;
+  .carousel-book .button-prev-book {
+    left: 50px;
   }
-  .carousel .carousel-control-next {
-    right: 40px;
-    position: absolute;
+  .carousel-book .button-next-book {
+    right: 50px;
+  }
+  /*subtitulo detras de escena*/
+  #h2-dde {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .carousel-dde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .carousel-dde .carousel-inner-dde {
+    width: 50%;
+    height: auto;
+    /*fotos book*/
+  }
+  .carousel-dde .carousel-inner-dde .fotos-ddes .foto-dde {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .carousel-dde .button-prev-dde {
+    left: 50px;
+  }
+  .carousel-dde .button-next-dde {
+    right: 50px;
   }
   /*tablet styles*/
-  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
-  .carousel-inner {
+  .carousel-inner-book {
     display: flex;
     width: 50%;
     height: auto;
     /*fotos book*/
   }
-  .carousel-inner .fotos-hijo .foto-book {
+  .carousel-inner-book .fotos-hijo .foto-book {
     width: 80%;
     height: auto;
     margin-bottom: 30px;
   }
   /*botones de cambio de foto book*/
-  .carousel-control-prev {
-    left: 150px;
-  }
-  .carousel-control-next {
-    right: 150px;
-  }
-}
-@media screen and (min-width: 320px) and (min-width: 990px) {
-  .carousel-inner {
-    width: 100%;
-    max-width: 100%;
+  .carousel-inner-dde {
+    display: flex;
+    width: 50%;
+    height: auto;
     /*fotos book*/
   }
-  .carousel-inner .fotos-hijo .foto-book {
-    width: 30%;
+  .carousel-inner-dde .fotos-ddes .foto-dde {
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+/*desktop styles*/
+@media screen and (min-width: 990px) {
+  .section-book, .section-dde {
+    display: flex;
+    justify-content: center;
+  }
+  .section-book .carousel-book, .section-dde .carousel-book {
+    width: 80%;
+  }
+  .section-book .carousel-book .carousel-inner-book, .section-dde .carousel-book .carousel-inner-book {
+    width: 40%;
+    /*fotos book*/
+  }
+  .section-book .carousel-book .carousel-inner-book .fotos-hijo, .section-dde .carousel-book .carousel-inner-book .fotos-hijo {
+    width: 100%;
     height: auto;
   }
-  /*botones de cambio de foto book*/
-  .carousel-control-prev {
-    left: 300px;
-    max-width: 100%;
-    overflow: hidden;
-    position: absolute;
+  .section-book .carousel-book .carousel-inner-book .fotos-hijo .foto-book, .section-dde .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
+    width: 100%;
+    height: auto;
   }
-  .carousel-control-next {
-    right: 300px;
+  .section-book .carousel-book .button-prev-book, .section-dde .carousel-book .button-prev-book {
+    left: 150px;
+  }
+  .section-book .carousel-book .button-next-book, .section-dde .carousel-book .button-next-book {
+    right: 150px;
+  }
+  .section-dde .carousel-dde {
+    width: 70%;
+  }
+  .section-dde .carousel-dde .carousel-inner-dde {
+    /*fotos ddes*/
+  }
+  .section-dde .carousel-dde .carousel-inner-dde .fotos-ddes {
+    width: 100%;
+    height: auto;
+  }
+  .section-dde .carousel-dde .carousel-inner-dde .fotos-ddes .foto-dde {
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 320px) {
@@ -638,7 +714,7 @@
   }
   /*foto biografia*/
   .div-foto-bio {
-    margin-left: 250px;
+    margin-left: 100px;
     margin-top: 15px;
     margin-bottom: 25px;
     width: 100%;

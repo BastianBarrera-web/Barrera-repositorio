@@ -20,19 +20,27 @@
         font-size: 50px;
         font-weight: bold;
         font-family: $font-primary;
+        color: $primary-color;
         margin-top: 150px;
         margin-left: 0px;
-        color: $primary-color;
     }
     
     #subtitulo-inicio{
         font-size: 35px;
         font-weight: bold;
         font-family: $font-primary;
+        color: $primary-color;
         margin: 100px;
         margin-top: -15px; 
         margin-bottom: 200px;
+    }
+
+    #div-bienvenida{
+        font-family: $font-primary;
         color: $primary-color;
+        font-weight: bold;
+        margin-top: -100px;
+        margin-bottom: 150px;
     }
 
     /*tablet styles*/
@@ -43,10 +51,17 @@
     
         #titulo-inicio{
             color: black;
+            margin-left: 30px;
         }
     
         #subtitulo-inicio{
             color: black;
+            margin-left: 120px;
+        }
+
+        #div-bienvenida{
+            color: black;
+            margin-left: 30px;
         }
     }
 
@@ -65,8 +80,13 @@
         }
     
         #subtitulo-inicio{
-            margin: 190px;
+            margin-left: 200px;
             margin-top: -15px;
+        }
+
+        #div-bienvenida{
+            margin-left: 100px;
+            margin-top: -140px;
         }
     }
 }

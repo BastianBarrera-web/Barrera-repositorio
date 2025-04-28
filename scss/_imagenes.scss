@@ -71,7 +71,7 @@
 
         /*foto biografia*/
         .div-foto-bio{
-            @include margin-foto(250px, 15px, 25px, 100%);
+            @include margin-foto(100px, 15px, 25px, 100%);
             overflow: hidden;
 
             .foto-bio{
