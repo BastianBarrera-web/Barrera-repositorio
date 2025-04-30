@@ -399,15 +399,13 @@
   }
   .section-dde .carousel-dde {
     width: 70%;
-  }
-  .section-dde .carousel-dde .carousel-inner-dde {
     /*fotos ddes*/
   }
-  .section-dde .carousel-dde .carousel-inner-dde .fotos-ddes {
+  .section-dde .carousel-dde .fotos-ddes {
     width: 100%;
     height: auto;
   }
-  .section-dde .carousel-dde .carousel-inner-dde .fotos-ddes .foto-dde {
+  .section-dde .carousel-dde .fotos-ddes .foto-dde {
     width: 100%;
     height: auto;
   }

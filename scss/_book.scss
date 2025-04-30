@@ -158,17 +158,14 @@
         .carousel-dde{
             width: 70%;
             
-            .carousel-inner-dde{
-    
-                /*fotos ddes*/
-                .fotos-ddes{
+            /*fotos ddes*/
+            .fotos-ddes{
+                width: 100%;
+                height: auto;
+          
+                .foto-dde{
                     width: 100%;
                     height: auto;
-              
-                    .foto-dde{
-                        width: 100%;
-                        height: auto;
-                    }
                 }
             }
         }
