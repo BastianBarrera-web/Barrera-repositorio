@@ -33,7 +33,7 @@
             overflow: hidden;
 
             .list-group-item {
-                background-color: $secundary-color;
+                background-color: $third-color;
                 max-width: 100%;
                 overflow: hidden;
             }
@@ -50,7 +50,7 @@
    
             th,
             td {
-                background-color: $secundary-color;
+                background-color: $third-color;
                 max-width: 100%;
                 overflow: hidden;
                 padding-right: 0%;
@@ -134,7 +134,7 @@
 
         /*footer cv*/
         #footer-cv{
-            margin-top: -100px;
+            margin-top: -120px;
         }
     }
 }

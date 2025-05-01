@@ -86,7 +86,7 @@
         .div-foto-cv{
             width: 100%;
             max-width: 500px;
-            @include margin-foto(1000px, -950px, 500px, 100%);
+            @include margin-foto(950px, -950px, 500px, 100%);
 
             .foto-cv{
                 width: 80%;  
@@ -97,7 +97,7 @@
 
         /*foto biografia*/
         .div-foto-bio{
-            @include margin-foto(1000px, -680px, 500px, 100%);
+            @include margin-foto(1000px, -760px, 500px, 100%);
             width: 100%;
             max-width: 400px;
 
