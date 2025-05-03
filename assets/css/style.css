@@ -386,35 +386,37 @@
 /*desktop styles*/
 @media screen and (min-width: 990px) {
   /*sección book*/
-  .section-book, .section-dde {
+  .section-book {
     display: flex;
     justify-content: center;
     /*carrusel de fotos book*/
   }
-  .section-book .carousel-book, .section-dde .carousel-book {
+  .section-book .carousel-book {
     width: 80%;
     /*botones book*/
   }
-  .section-book .carousel-book .carousel-inner-book, .section-dde .carousel-book .carousel-inner-book {
+  .section-book .carousel-book .carousel-inner-book {
     width: 40%;
     /*fotos book*/
   }
-  .section-book .carousel-book .carousel-inner-book .fotos-hijo, .section-dde .carousel-book .carousel-inner-book .fotos-hijo {
+  .section-book .carousel-book .carousel-inner-book .fotos-hijo {
     width: 100%;
     height: auto;
   }
-  .section-book .carousel-book .carousel-inner-book .fotos-hijo .foto-book, .section-dde .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
+  .section-book .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
     width: 100%;
     height: auto;
   }
-  .section-book .carousel-book .button-prev-book, .section-dde .carousel-book .button-prev-book {
+  .section-book .carousel-book .button-prev-book {
     left: 150px;
   }
-  .section-book .carousel-book .button-next-book, .section-dde .carousel-book .button-next-book {
+  .section-book .carousel-book .button-next-book {
     right: 150px;
   }
   /*sección detras de escena*/
   .section-dde {
+    display: flex;
+    justify-content: center;
     /*carrusel de fotos detras de escena*/
   }
   .section-dde .carousel-dde {

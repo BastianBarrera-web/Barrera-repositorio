@@ -158,7 +158,8 @@
 
     /*sección detras de escena*/
     .section-dde{
-        @extend .section-book;
+        display: flex;
+        justify-content: center;
 
         /*carrusel de fotos detras de escena*/
         .carousel-dde{
