@@ -32,6 +32,7 @@
             }
         }
 
+        /*botones*/
         .button-prev-book{
             left: 50px;
         }
@@ -49,6 +50,7 @@
         font-family: $font-primary;
     }
 
+    /*carrusel de fotos detras de escena*/
     .carousel-dde{
         display: flex;
         justify-content: center;
@@ -59,7 +61,7 @@
             width: 50%;
             height: auto;
             
-            /*fotos book*/
+            /*fotos detras de escena*/
             .fotos-ddes{
                 .foto-dde{
                     width: 100%;
@@ -69,6 +71,7 @@
             }
         }
 
+        /*botones detras de escena*/
         .button-prev-dde{
             left: 50px;
         }
@@ -81,6 +84,7 @@
     /*tablet styles*/
     @include tablet {
 
+        /*carrusel de fotos book*/
         .carousel-inner-book{
             display: flex;
             width: 50%;
@@ -96,15 +100,13 @@
             }
         }
 
-        /*botones de cambio de foto book*/
-   
-
+        /*carrusel de fotos detras de escena*/
         .carousel-inner-dde{
             display: flex;
             width: 50%;
             height: auto;
             
-            /*fotos book*/
+            /*fotos detras de escena*/
             .fotos-ddes{
                 .foto-dde{
                     width: 80%;
@@ -119,10 +121,12 @@
 /*desktop styles*/
 @include desktop {
 
+    /*sección book*/
     .section-book{
         display: flex;
         justify-content: center;
 
+        /*carrusel de fotos book*/
         .carousel-book{
             width: 80%;
             
@@ -141,24 +145,26 @@
                 }
             }
 
+            /*botones book*/
             .button-prev-book{
                 left: 150px;
             }
     
             .button-next-book{
                 right: 150px;
-    
             } 
         }
     }
 
+    /*sección detras de escena*/
     .section-dde{
         @extend .section-book;
-        
+
+        /*carrusel de fotos detras de escena*/
         .carousel-dde{
             width: 70%;
             
-            /*fotos ddes*/
+            /*fotos detras de escena*/
             .fotos-ddes{
                 width: 100%;
                 height: auto;

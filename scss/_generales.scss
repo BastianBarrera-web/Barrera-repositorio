@@ -58,6 +58,7 @@
     /*tablet styles*/
     @include tablet {
 
+        /*navbar*/
         .navbar {
             .container-fluid {
                 margin-left: 100px;
@@ -97,6 +98,7 @@
     /*desktop styles*/
     @include desktop {
 
+        /*navbar*/
         .navbar {
             .container-fluid {
                 margin-left: 22%;
@@ -119,10 +121,6 @@
                         .nav-item {
                             margin-left: 10px;
                         }
-
-
-
-                 
                     }
                 }
             }
