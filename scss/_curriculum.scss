@@ -22,14 +22,14 @@
             font-weight: bold;
             font-family: $font-primary;
             font-size: 25px;
-            margin-left: 25px;
+            margin-left: 15px;
         }
 
         /*list*/
         .list-group {
-            width: 80%;
+            width: 85%;
             max-width: 100%;
-            margin-left: 25px;
+            margin-left: 15px;
             overflow: hidden;
 
             .list-group-item {
@@ -41,9 +41,9 @@
 
         /*table*/
         .table {
-            width: 80%;
+            width: 85%;
             max-width: 100%;
-            margin-left: 25px;
+            margin-left: 15px;
             margin-right: 10%;
             overflow: hidden;
             border-radius: 0.375rem;
@@ -64,7 +64,7 @@
     @include tablet {
         /*main*/
         #main-cv {
-            margin-left: 40px;
+            margin-left: 20px;
 
             /*titulo*/
             #h1-curriculum {
@@ -73,22 +73,22 @@
           
             /*subtítulo*/
             .cv-subtitulo {
-                margin-left: 100px;
+                margin-left: 50px;
                 font-size: 30px;
             }
           
             /*list*/
             .list-group {
-                width: 70%;
-                margin-left: 100px;
+                width: 85%;
+                margin-left: 50px;
                 max-width: 100%;
                 overflow: hidden;
             }
     
             /*table*/
             .table {
-                width: 70%;
-                margin-left: 100px;
+                width: 85%;
+                margin-left: 50px;
 
                 th,
                 td {
@@ -104,30 +104,30 @@
 
         /*main*/
         #main-cv {
-            margin-left: 50px;
+            margin-left: 100px;
 
             /*titulo*/
             #h1-curriculum {
-                margin-left: 400px;
+                margin-left: 300px;
                 text-align: left;
             }
           
             /*subtitulo*/
             .cv-subtitulo {
-                margin-left: 100px;
+                margin-left: 30px;
             }
           
             /*list*/
             .list-group {
                 width: 700px;
-                margin-left: 100px;
+                margin-left: 30px;
                 height: auto;
             }
           
             /*table*/
             .table {
                 width: 700px;
-                margin-left: 100px;
+                margin-left: 30px;
                 height: auto;
             }
         }

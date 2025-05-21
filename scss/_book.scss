@@ -3,6 +3,12 @@
 
 @media (min-width: 320px) {
 
+    /*main book*/
+    #main-book{
+        margin-left: 15px;
+        
+    }
+
     /*titulo book*/
     #titulo-book{
         text-align: center;
@@ -121,11 +127,18 @@
 /*desktop styles*/
 @include desktop {
 
+    #main-book{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     /*sección book*/
     .section-book{
         display: flex;
         justify-content: center;
-
+        flex-wrap: wrap;
+       
         /*carrusel de fotos book*/
         .carousel-book{
             width: 80%;
@@ -160,6 +173,7 @@
     .section-dde{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
         /*carrusel de fotos detras de escena*/
         .carousel-dde{

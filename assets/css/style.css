@@ -94,7 +94,6 @@
     font-size: 50px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
     text-align: center;
   }
   /*parrafo*/
@@ -130,7 +129,7 @@
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
   .main-bio {
-    margin-left: 40px;
+    margin-left: 0px;
   }
   /*Título principal*/
   .titulo-biografia {
@@ -158,21 +157,21 @@
 @media screen and (min-width: 320px) and (min-width: 990px) {
   /*main bio*/
   .main-bio {
-    margin-left: 50px;
+    margin-left: 80px;
   }
   /*titulo bio*/
   .titulo-biografia {
-    margin-top: 20px;
-    margin-left: 350px;
+    margin-top: 0px;
+    margin-left: 300px;
   }
   p {
     width: 850px;
     margin-right: 50px;
-    margin-left: 40px;
+    margin-left: 4px;
   }
   /*Cards*/
   .card-bio .card-group {
-    margin-left: 40px;
+    margin-left: 4px;
   }
   /*footer*/
   #footer-biografia {
@@ -199,12 +198,12 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    margin-left: 25px;
+    margin-left: 15px;
   }
   #main-cv .list-group {
-    width: 80%;
+    width: 85%;
     max-width: 100%;
-    margin-left: 25px;
+    margin-left: 15px;
     overflow: hidden;
   }
   #main-cv .list-group .list-group-item {
@@ -213,9 +212,9 @@
     overflow: hidden;
   }
   #main-cv .table {
-    width: 80%;
+    width: 85%;
     max-width: 100%;
-    margin-left: 25px;
+    margin-left: 15px;
     margin-right: 10%;
     overflow: hidden;
     border-radius: 0.375rem;
@@ -234,7 +233,7 @@
 @media screen and (min-width: 320px) and (min-width: 600px) {
   /*main*/
   #main-cv {
-    margin-left: 40px;
+    margin-left: 20px;
     /*titulo*/
     /*subtítulo*/
     /*list*/
@@ -244,18 +243,18 @@
     margin-left: 0;
   }
   #main-cv .cv-subtitulo {
-    margin-left: 100px;
+    margin-left: 50px;
     font-size: 30px;
   }
   #main-cv .list-group {
-    width: 70%;
-    margin-left: 100px;
+    width: 85%;
+    margin-left: 50px;
     max-width: 100%;
     overflow: hidden;
   }
   #main-cv .table {
-    width: 70%;
-    margin-left: 100px;
+    width: 85%;
+    margin-left: 50px;
   }
   #main-cv .table th,
   #main-cv .table td {
@@ -266,27 +265,27 @@
 @media screen and (min-width: 320px) and (min-width: 990px) {
   /*main*/
   #main-cv {
-    margin-left: 50px;
+    margin-left: 100px;
     /*titulo*/
     /*subtitulo*/
     /*list*/
     /*table*/
   }
   #main-cv #h1-curriculum {
-    margin-left: 400px;
+    margin-left: 300px;
     text-align: left;
   }
   #main-cv .cv-subtitulo {
-    margin-left: 100px;
+    margin-left: 30px;
   }
   #main-cv .list-group {
     width: 700px;
-    margin-left: 100px;
+    margin-left: 30px;
     height: auto;
   }
   #main-cv .table {
     width: 700px;
-    margin-left: 100px;
+    margin-left: 30px;
     height: auto;
   }
   /*footer cv*/
@@ -295,6 +294,10 @@
   }
 }
 @media (min-width: 320px) {
+  /*main book*/
+  #main-book {
+    margin-left: 15px;
+  }
   /*titulo book*/
   #titulo-book {
     text-align: center;
@@ -385,10 +388,16 @@
 }
 /*desktop styles*/
 @media screen and (min-width: 990px) {
+  #main-book {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   /*sección book*/
   .section-book {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     /*carrusel de fotos book*/
   }
   .section-book .carousel-book {
@@ -417,6 +426,7 @@
   .section-dde {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     /*carrusel de fotos detras de escena*/
   }
   .section-dde .carousel-dde {
@@ -438,7 +448,6 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-top: 30px;
   }
   /*reel*/
   .reel-mp4 {
@@ -451,11 +460,9 @@
   }
   /*subtitulo contacto*/
   #subtitulo-reel {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: bold;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
   }
   /*contacto*/
   .contacto {
@@ -465,12 +472,12 @@
     align-items: center;
   }
   .contacto .conteiner-contacto {
-    width: 300px;
+    width: 340px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "name email" "texto texto" "none btn-enviar";
     row-gap: 5px;
-    margin-left: 20px;
+    margin-left: 0px;
     column-gap: 10px;
     justify-items: end;
     margin-bottom: 30px;
@@ -532,21 +539,19 @@
   /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
-  /*titulo reel*/
-  #titulo-reel {
-    margin-top: 20px;
-  }
   /*reel*/
   .reel-mp4 {
-    width: 70%;
+    width: 80%;
     height: auto;
-    margin-left: 15%;
+    margin-left: 10%;
   }
   /*contacto*/
   .contacto .conteiner-contacto {
-    width: 500px;
+    width: 80%;
+    height: auto;
     padding: 25px;
     row-gap: 10px;
+    margin-left: 10%;
   }
   .contacto .conteiner-contacto .input {
     font-size: 16px;
@@ -559,13 +564,16 @@
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
-  /*titulo reel*/
-  #titulo-reel {
-    margin-top: 10px;
+  /*main reel*/
+  #main-reel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   /*reel*/
   .reel-mp4 {
-    margin-left: 210px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   /*subtitulo contacto*/
   #subtitulo-reel {
@@ -573,9 +581,10 @@
   }
   /*contacto*/
   .contacto .conteiner-contacto {
-    width: 600px;
+    width: 400px;
     padding: 30px;
     row-gap: 12px;
+    margin-left: 0px;
   }
   .contacto .conteiner-contacto .input {
     font-size: 18px;
@@ -592,6 +601,24 @@
   body {
     background-color: rgb(211, 211, 211);
     overflow-x: hidden;
+  }
+  /*Separación de secciones cv y biografía*/
+  .seccion-separada-cv-b {
+    width: 95%;
+    max-width: 100%;
+    padding: 20px 10px;
+    border: 10px solid rgb(211, 211, 211);
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+  }
+  /*Separación de secciones book y reel*/
+  .seccion-separada-br {
+    width: 95%;
+    max-width: 100%;
+    padding: 10px 0px;
+    border: 10px solid rgb(211, 211, 211);
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
   }
   /*footer*/
   .ul-footer {
@@ -630,6 +657,16 @@
   /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
+  /*Separación de secciones cv y biografía*/
+  .seccion-separada-cv-b {
+    width: 820px;
+  }
+  /*Separación de secciones book y reel*/
+  .seccion-separada-br {
+    width: 80%;
+    max-width: 100%;
+    margin-left: 80px;
+  }
   /*navbar*/
   .navbar .container-fluid {
     margin-left: 100px;
@@ -659,6 +696,20 @@
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
+  /*Separación de secciones cv y biografía*/
+  .seccion-separada-cv-b {
+    width: 830px;
+    padding: 20px 20px;
+  }
+  /*Separación de secciones book y reel*/
+  .seccion-separada-br {
+    width: 50%;
+    max-width: 100%;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   /*navbar*/
   .navbar .container-fluid {
     margin-left: 22%;
@@ -735,8 +786,8 @@
     overflow: hidden;
     max-width: 400px;
     margin-left: 150px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     width: 100%;
     margin-right: 40%;
   }
@@ -761,8 +812,8 @@
     width: 100%;
     max-width: 500px;
     margin-left: 950px;
-    margin-top: -950px;
-    margin-bottom: 500px;
+    margin-top: -1050px;
+    margin-bottom: 600px;
     width: 100%;
   }
   .div-foto-cv .foto-cv {
@@ -773,8 +824,8 @@
   /*foto biografia*/
   .div-foto-bio {
     margin-left: 1000px;
-    margin-top: -760px;
-    margin-bottom: 500px;
+    margin-top: -900px;
+    margin-bottom: 650px;
     width: 100%;
     width: 100%;
     max-width: 400px;

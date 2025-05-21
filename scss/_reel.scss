@@ -9,7 +9,6 @@
         text-align: center;
         font-family: $font-primary;
         font-weight: bold;
-        margin-top: 30px;
     }
 
     /*reel*/
@@ -24,11 +23,9 @@
 
     /*subtitulo contacto*/
     #subtitulo-reel{
-        margin-left: 20px;
-        margin-top: 20px;
-        font-size: 25px;
-        font-weight: bold;
+        text-align: center;
         font-family: $font-primary;
+        font-weight: bold;
     }
 
     /*contacto*/
@@ -39,7 +36,7 @@
         align-items: center;
     
         .conteiner-contacto{
-            width: 300px;
+            width: 340px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
@@ -47,7 +44,7 @@
             "texto texto"
             "none btn-enviar";
             row-gap: 5px;
-            margin-left: 20px;
+            margin-left: 0px;
             column-gap: 10px;
             justify-items: end;
             margin-bottom: 30px;
@@ -118,24 +115,21 @@
     /*tablet styles*/
     @include tablet {
 
-        /*titulo reel*/
-        #titulo-reel{
-            margin-top: 20px;
-        }
-
         /*reel*/
         .reel-mp4{
-            width: 70%;
+            width: 80%;
             height: auto;
-            margin-left: 15%;
+            margin-left: 10%;
         }
 
         /*contacto*/
         .contacto {
             .conteiner-contacto{
-                width: 500px;
+                width: 80%;
+                height: auto;
                 padding: 25px;
                 row-gap: 10px;
+                margin-left: 10%;
 
                 .input{
                     font-size: 16px;
@@ -155,14 +149,17 @@
     /*desktop styles*/
     @include desktop {
 
-        /*titulo reel*/
-        #titulo-reel{
-            margin-top: 10px;
+        /*main reel*/
+        #main-reel{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         /*reel*/
         .reel-mp4{
-            margin-left: 210px;
+            margin-left: 0px;
+            margin-right: 0px;
         }
 
         /*subtitulo contacto*/
@@ -173,9 +170,10 @@
         /*contacto*/
         .contacto {
             .conteiner-contacto{
-                width: 600px;
+                width: 400px;
                 padding: 30px;
                 row-gap: 12px;
+                margin-left: 0px;
 
                 .input{
                     font-size: 18px;
