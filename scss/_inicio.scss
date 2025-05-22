@@ -101,24 +101,26 @@
             background-position-y: 40px;
             background-size: 1100px auto;
 
-            /*secciones inicio*/
-            .seccion-separada-inicio{
-                width: 450px;
-                margin-left: 400px;
-                margin-bottom: 50px;
+            #main-inicio{
+                /*secciones inicio*/
+                .seccion-separada-inicio{
+                    width: 450px;
+                    margin-left: 270px;
+                    margin-bottom: 50px;
 
-                /*titulos inicio*/
-                #titulo-inicio{
-                    font-size: 65px;
-                }
+                    /*titulos inicio*/
+                    #titulo-inicio{
+                        font-size: 65px;
+                    }
 
-                #subtitulo-inicio{
-                    font-size: 45px;
-                }
+                    #subtitulo-inicio{
+                        font-size: 45px;
+                    }
 
-                /*texto bienvenida*/
-                #div-bienvenida{
-                    font-size: 35px;
+                    /*texto bienvenida*/
+                    #div-bienvenida{
+                        font-size: 35px;
+                    }
                 }
             }
         }

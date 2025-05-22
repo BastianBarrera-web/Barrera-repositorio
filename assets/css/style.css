@@ -85,22 +85,24 @@
     background-position-x: 500px;
     background-position-y: 40px;
     background-size: 1100px auto;
+  }
+  #body-inicio #main-inicio {
     /*secciones inicio*/
   }
-  #body-inicio .seccion-separada-inicio {
+  #body-inicio #main-inicio .seccion-separada-inicio {
     width: 450px;
-    margin-left: 400px;
+    margin-left: 270px;
     margin-bottom: 50px;
     /*titulos inicio*/
     /*texto bienvenida*/
   }
-  #body-inicio .seccion-separada-inicio #titulo-inicio {
+  #body-inicio #main-inicio .seccion-separada-inicio #titulo-inicio {
     font-size: 65px;
   }
-  #body-inicio .seccion-separada-inicio #subtitulo-inicio {
+  #body-inicio #main-inicio .seccion-separada-inicio #subtitulo-inicio {
     font-size: 45px;
   }
-  #body-inicio .seccion-separada-inicio #div-bienvenida {
+  #body-inicio #main-inicio .seccion-separada-inicio #div-bienvenida {
     font-size: 35px;
   }
 }
@@ -191,7 +193,6 @@
     /*titulo biografía*/
     /*parrafo biografía*/
     /*Cards*/
-    /*footer*/
   }
   .main-bio .titulo-biografia {
     margin-top: 0px;
@@ -205,8 +206,9 @@
   .main-bio .card-bio .card-group {
     margin-left: 4px;
   }
-  .main-bio #footer-biografia {
-    margin-top: -100px;
+  /*footer biografía*/
+  #footer-biografia {
+    margin-top: -290px;
   }
 }
 @media (min-width: 320px) {
@@ -400,6 +402,11 @@
   #main-book .carousel-dde .button-next-dde {
     right: 50px;
   }
+  /*footer book*/
+  #footer-book {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
   /*tablet styles*/
   /*desktop styles*/
 }
@@ -430,6 +437,10 @@
   #main-book .carousel-inner-dde .fotos-ddes .foto-dde {
     width: 80%;
     height: auto;
+  }
+  /*footer book*/
+  #footer-book {
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
@@ -487,6 +498,11 @@
   #main-book .section-dde .carousel-dde .fotos-ddes .foto-dde {
     width: 100%;
     height: auto;
+  }
+  /*footer book*/
+  #footer-book {
+    margin-left: 60px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 320px) {
@@ -594,6 +610,11 @@
   #main-reel .contacto .conteiner-contacto .btn-enviar:hover {
     background-color: #0056b3;
   }
+  /*footer reel*/
+  #footer-reel {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
   /*tablet styles*/
   /*desktop styles*/
 }
@@ -621,6 +642,10 @@
   }
   .contacto .conteiner-contacto .btn-enviar {
     font-size: 16px;
+  }
+  /*footer reel*/
+  #footer-reel {
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
@@ -651,6 +676,11 @@
   }
   .contacto .conteiner-contacto .btn-enviar {
     font-size: 18px;
+  }
+  /*footer reel*/
+  #footer-reel {
+    margin-left: 60px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 320px) {
