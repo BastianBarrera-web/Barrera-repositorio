@@ -5,190 +5,206 @@
 
     /*main book*/
     #main-book{
-        margin-left: 15px;
-        
-    }
-
-    /*titulo book*/
-    #titulo-book{
-        text-align: center;
-        font-weight: bold;
-        font-family: $font-primary;
-    }
-
-    /*carrusel de fotos book*/
-
-    .carousel-book{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        .carousel-inner-book{
-            width: 50%;
-            height: auto;
-            
-            /*fotos book*/
-            .fotos-hijo{
-                .foto-book{
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 30px;
-                }
-            }
-        }
-
-        /*botones*/
-        .button-prev-book{
-            left: 50px;
-        }
-
-        .button-next-book{
-            right: 50px;
-
-        } 
-    }
-
-    /*subtitulo detras de escena*/
-    #h2-dde {
-        text-align: center;
-        font-weight: bold;
-        font-family: $font-primary;
-    }
-
-    /*carrusel de fotos detras de escena*/
-    .carousel-dde{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        .carousel-inner-dde{
-            width: 50%;
-            height: auto;
-            
-            /*fotos detras de escena*/
-            .fotos-ddes{
-                .foto-dde{
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 30px;
-                }
-            }
-        }
-
-        /*botones detras de escena*/
-        .button-prev-dde{
-            left: 50px;
-        }
-
-        .button-next-dde{
-            right: 50px;
-        }
-    }
-
-    /*tablet styles*/
-    @include tablet {
-
-        /*carrusel de fotos book*/
-        .carousel-inner-book{
-            display: flex;
-            width: 50%;
-            height: auto;
-            
-            /*fotos book*/
-            .fotos-hijo{
-                .foto-book{
-                    width: 80%;
-                    height: auto;
-                    margin-bottom: 30px;
-                }
-            }
-        }
-
-        /*carrusel de fotos detras de escena*/
-        .carousel-inner-dde{
-            display: flex;
-            width: 50%;
-            height: auto;
-            
-            /*fotos detras de escena*/
-            .fotos-ddes{
-                .foto-dde{
-                    width: 80%;
-                    height: auto;
-                    margin-bottom: 30px;
-                }
-            }
-        }
-    }
-}
-
-/*desktop styles*/
-@include desktop {
-
-    #main-book{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    }
 
-    /*sección book*/
-    .section-book{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-       
+        /*titulo book*/
+        #titulo-book{
+            text-align: center;
+            font-weight: bold;
+            font-family: $font-primary;
+        }
+
         /*carrusel de fotos book*/
         .carousel-book{
-            width: 80%;
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
             .carousel-inner-book{
-                width: 40%;      
-                
+                width: 50%;
+                height: auto;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.03);
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                }
+
                 /*fotos book*/
                 .fotos-hijo{
-                    width: 100%;
-                    height: auto;
-              
                     .foto-book{
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            /*botones*/
+            .button-prev-book{
+                left: 50px;
+            }
+
+            .button-next-book{
+                right: 50px;
+            } 
+        }
+
+        /*subtitulo detras de escena*/
+        #h2-dde {
+            text-align: center;
+            font-weight: bold;
+            font-family: $font-primary;
+        }
+        
+        /*carrusel de fotos detras de escena*/
+        .carousel-dde{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .carousel-inner-dde{
+                width: 50%;
+                height: auto;
+
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.03);
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+                }
+
+                /*fotos detras de escena*/
+                .fotos-ddes{
+                    .foto-dde{
                         width: 100%;
                         height: auto;
                     }
                 }
             }
 
-            /*botones book*/
-            .button-prev-book{
-                left: 150px;
+            /*botones detras de escena*/
+            .button-prev-dde{
+                left: 50px;
             }
-    
-            .button-next-book{
-                right: 150px;
-            } 
+
+            .button-next-dde{
+                right: 50px;
+            }
         }
     }
 
-    /*sección detras de escena*/
-    .section-dde{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    /*tablet styles*/
+    @include tablet {
+    
+        #main-book{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
 
-        /*carrusel de fotos detras de escena*/
-        .carousel-dde{
-            width: 70%;
-            
-            /*fotos detras de escena*/
-            .fotos-ddes{
-                width: 100%;
+            /*carrusel de fotos book*/
+            .carousel-inner-book{
+                display: flex;
+                width: 50%;
                 height: auto;
-          
-                .foto-dde{
-                    width: 100%;
-                    height: auto;
+
+                /*fotos book*/
+                .fotos-hijo{
+                    .foto-book{
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+            }
+
+            /*carrusel de fotos detras de escena*/
+            .carousel-inner-dde{
+                display: flex;
+                width: 50%;
+                height: auto;
+
+                /*fotos detras de escena*/
+                .fotos-ddes{
+                    .foto-dde{
+                        width: 80%;
+                        height: auto;
+                    }
                 }
             }
         }
     }
-}        
+
+    /*desktop styles*/
+    @include desktop {
+
+        /*main book*/
+        #main-book{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            /*sección book*/
+            .section-book{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                /*carrusel de fotos book*/
+                .carousel-book{
+                    width: 80%;
+
+                    .carousel-inner-book{
+                        width: 40%; 
+                        
+                        /*fotos book*/
+                        .fotos-hijo{
+                            width: 100%;
+                            height: auto;
+
+                            .foto-book{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    /*botones book*/
+                    .button-prev-book{
+                        left: 80px;
+                    }
+                    .button-next-book{
+                        right: 80px;
+                    } 
+                }
+            }
+
+            /*sección detras de escena*/
+            .section-dde{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                /*carrusel de fotos detras de escena*/
+                .carousel-dde{
+                    width: 70%;
+
+                    /*fotos detras de escena*/
+                    .fotos-ddes{
+                        width: 100%;
+                        height: auto;
+
+                        .foto-dde{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}     

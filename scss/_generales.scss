@@ -15,27 +15,44 @@
         width: 95%;
         max-width: 100%;
         padding: 20px 10px;
-        border: 10px solid $primary-color;
-        background-color: rgb(240, 240, 240);
+        border: 1px solid $secundary-color;
+        background-color: rgb(218, 224, 228);
         border-radius: 20px;
+        margin: 5px;
     }
 
     /*Separación de secciones book y reel*/
     .seccion-separada-br{
-        width: 95%;
+        width: 85%;
         max-width: 100%;
         padding: 10px 0px;
-        border: 10px solid $primary-color;
-        background-color: rgb(240, 240, 240);
+        border: 1px solid $secundary-color;
+        background-color: rgb(218, 224, 228);
         border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5px;
 
     }
 
     /*footer*/
-    .ul-footer {
-        list-style-type: none;
-    }
+    footer{
+        margin-left: 5px;
+        background-color: rgba(218, 224, 228, 0.596);
+        border: 1px solid $secundary-color;
+        width: 250px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 5px;
+        border-radius: 10px;
 
+        .ul-footer{
+            list-style-type: none;
+            padding: 0%;
+        }
+    }
+ 
     /*navbar*/
     .navbar {
         background-color: $secundary-color;
@@ -86,9 +103,13 @@
 
         /*Separación de secciones book y reel*/
         .seccion-separada-br{
-            width: 80%;
-            max-width: 100%;
-            margin-left: 80px;
+            width: 60%;
+            max-width: 100%;            
+        }
+
+        /*footer*/
+        footer{
+            margin-left: 30px;
         }
 
         /*navbar*/
@@ -139,13 +160,18 @@
 
         /*Separación de secciones book y reel*/
         .seccion-separada-br{
-            width: 50%;
+            width: 60%;
             max-width: 100%;
+            height: auto;
             margin-left: 80px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+        }
 
+        /*footer*/
+        footer{
+            margin-left: 50px;
         }
 
         /*navbar*/

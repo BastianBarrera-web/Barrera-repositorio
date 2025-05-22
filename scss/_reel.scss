@@ -4,113 +4,128 @@
 
 @media (min-width: 320px) {
 
-    /*titulo reel*/
-    #titulo-reel{
-        text-align: center;
-        font-family: $font-primary;
-        font-weight: bold;
-    }
-
-    /*reel*/
-    .reel-mp4{
-        width: 80%;
-        height: auto;    
-        max-width: 100%;
-        margin-left: 10%;
-        margin-right: 10%;
-        overflow: hidden;
-    }    
-
-    /*subtitulo contacto*/
-    #subtitulo-reel{
-        text-align: center;
-        font-family: $font-primary;
-        font-weight: bold;
-    }
-
-    /*contacto*/
-    .contacto {
+    /*main reel*/
+    #main-reel{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-    
-        .conteiner-contacto{
-            width: 340px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-            "name email"
-            "texto texto"
-            "none btn-enviar";
-            row-gap: 5px;
-            margin-left: 0px;
-            column-gap: 10px;
-            justify-items: end;
-            margin-bottom: 30px;
-            padding: 15px;
-            background-color: $secundary-color;
+        flex-wrap: wrap;
+
+        /*titulo reel*/
+        #titulo-reel{
+            text-align: center;
+            font-family: $font-primary;
+            font-weight: bold;
+        }
+
+        /*reel*/
+        .reel-mp4{
+            width: 80%;
+            height: auto;
+            max-width: 100%;
+            margin-left: 10%;
+            margin-right: 10%;
+            overflow: hidden;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
 
-            .name {
-                grid-area: name;
+            &:hover {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transform: scale(1.01);    
             }
-        
-            .email{
-                grid-area: email;
-            }
+        }
 
-            .input{
+        /*subtitulo contacto*/
+        #subtitulo-reel{
+            font-family: $font-primary;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /*contacto*/
+        .contacto {
+            height: auto;    
+            width: 100%;
+            overflow: hidden;
+            max-width: 100%;
+            margin-right: 10%;
+            margin-left: 10%;
+
+            .conteiner-contacto{
+                display: grid;
                 width: 100%;
-                padding: 8px;
-                border: 1px solid $third-color;
-                border-radius: 8px;
-                font-size: 14px;
-                background-color: $third-color;
-        
-                &:focus {
-                    outline: none;
-                    border-color: $secundary-color;
-                    box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
-                }
-            }
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "name email"
+                "texto texto"
+                "none btn-enviar";
+                row-gap: 5px;
+                column-gap: 10px;
+                justify-items: end;
+                padding: 15px;
+                background-color: $secundary-color;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-            .text{
-                grid-area: texto;
-                width: 100%;
-                padding: 8px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                font-size: 14px;
-                resize: vertical;
-                background-color: $third-color;
-        
-                &:focus {
-                    outline: none;
-                    border-color: $secundary-color;
-                    box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+                .name {
+                    grid-area: name;
                 }
-            }
 
-            .btn-enviar{
-                grid-area: btn-enviar;
-                width: 150px;
-                padding: 10px;
-                font-size: 14px;
-                background-color: #007bff;
-                color: $third-color;
-                border: none;
-                border-radius: 8px;
-                cursor: pointer;
-                transition: background-color 0.2s ease;
-        
-                &:hover {
-                    background-color: #0056b3;
+                .email{
+                    grid-area: email;
+                }
+
+                .input{
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid $third-color;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    background-color: $third-color;
+
+                    &:focus {
+                        outline: none;
+                        border-color: $secundary-color;
+                        box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+                    }
+                }
+
+                .text{
+                    grid-area: texto;
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    resize: vertical;
+                    background-color: $third-color;
+
+                    &:focus {
+                        outline: none;
+                        border-color: $secundary-color;
+                        box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
+                    }
+                }
+
+                .btn-enviar{
+                    grid-area: btn-enviar;
+                    width: 150px;
+                    padding: 10px;
+                    font-size: 14px;
+                    background-color: #007bff;
+                    color: $third-color;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: background-color 0.2s ease;
+
+                    &:hover {
+                        background-color: #0056b3;
+                    }
                 }
             }
         }
     }
+
 
     /*tablet styles*/
     @include tablet {
@@ -119,17 +134,17 @@
         .reel-mp4{
             width: 80%;
             height: auto;
-            margin-left: 10%;
         }
 
         /*contacto*/
         .contacto {
+            width: 90%;
             .conteiner-contacto{
-                width: 80%;
+                width: 100%;
                 height: auto;
                 padding: 25px;
                 row-gap: 10px;
-                margin-left: 10%;
+                
 
                 .input{
                     font-size: 16px;
@@ -149,13 +164,6 @@
     /*desktop styles*/
     @include desktop {
 
-        /*main reel*/
-        #main-reel{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
         /*reel*/
         .reel-mp4{
             margin-left: 0px;
@@ -169,8 +177,9 @@
 
         /*contacto*/
         .contacto {
+            width: 80%;
             .conteiner-contacto{
-                width: 400px;
+                width: 100%;
                 padding: 30px;
                 row-gap: 12px;
                 margin-left: 0px;

@@ -8,116 +8,124 @@
     .main-bio {
         margin-left: 5px;
         margin-right: 5px;
-    }
 
-    // Título principal
-    .titulo-biografia {
-        font-size: 50px;
-        font-weight: bold;
-        font-family: $font-primary;
-        text-align: center;
-    }
-
-    /*parrafo*/
-    p{
-        font-size: 20px;
-        font-family: $font-primary;
-        margin-right: 10px;
-        margin-left: 10px;
-        max-width: 100%;
-    }
-
-    .card-bio {
-        justify-items: center;
-
-        .card-group {
-            width: 300px;
-            height: auto;
-            margin-left: 10px;
-            margin-right: 10px;
-            grid-template-columns: 1fr;
-            grid-template-rows: 450px 450px 450px;
-            row-gap: 20px;
-
-            .card {
-                width: 300px;
-                height: auto;
-
-                .card-img-top {
-                    height: 300px;
-                    width: 300px;
-                }
-            }
-        }
-    } 
-
-
-    /*tablet styles*/
-    @include tablet {
-
-        // Sección principal de la biografía
-        .main-bio {
-            margin-left: 0px;
-        }
-
-        /*Título principal*/
+        /*titulo biografía*/
         .titulo-biografia {
-            text-align: left;
-            margin-left: 220px;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: $font-primary;
+            text-align: center;
         }
 
-        p {
-            margin-right: 10%;
+        /*parrafo biografía*/
+        p{
+            font-size: 20px;
+            font-family: $font-primary;
+            margin-right: 10px;
+            margin-left: 10px;
+            max-width: 100%;
         }
 
         /*cards*/
         .card-bio {
-            justify-items: left;
+            justify-items: center;
 
             .card-group {
-                width: 750px;
-                
+                width: 300px;
+                height: auto;
+                margin-left: 10px;
+                margin-right: 10px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 450px 450px 450px;
+                row-gap: 20px;
+
                 .card {
-                    width: 500px;
+                    width: 300px;
+                    height: auto;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.02);
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        filter: brightness(1.08) saturate(1.05);
+                    }
+
                     .card-img-top {
-                        height: 250px;
-                        width: 249px;
+                        height: 300px;
+                        width: 300px;
                     }
                 }
             }
-        }     
+        }
+    }
+
+    /*tablet styles*/
+    @include tablet {
+
+        /*main biografía*/
+        .main-bio {
+            margin-left: 0px;
+
+            /*titulo biografía*/
+            .titulo-biografia {
+                text-align: left;
+                margin-left: 220px;
+            }
+
+            /*parrafo biografía*/
+            p {
+                margin-right: 10%;
+            }
+
+            /*cards*/
+            .card-bio {
+                justify-items: left;
+
+                .card-group {
+                    width: 750px;
+
+                    .card {
+                        width: 500px;
+
+                        .card-img-top {
+                            height: 250px;
+                            width: 249px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /*desktop styles*/
     @include desktop {
 
-        /*main bio*/
+        /*main biografía*/
         .main-bio {
             margin-left: 80px;
-        }
 
-        /*titulo bio*/
+            /*titulo biografía*/
+            .titulo-biografia {
+                margin-top: 0px;
+                margin-left: 300px;
+            }
 
-        .titulo-biografia {
-            margin-top: 0px;
-            margin-left: 300px;
-        }
+            /*parrafo biografía*/
+            p {
+                width: 850px;
+                margin-right: 50px;
+                margin-left: 4px;
+            }
 
-        p {
-            width: 850px;
-            margin-right: 50px;
-            margin-left: 4px;
-        }
+            /*Cards*/
+            .card-bio .card-group {
+                margin-left: 4px;
+            }
 
-        /*Cards*/
-
-        .card-bio .card-group {
-            margin-left: 4px;
-        }
-
-        /*footer*/
-        #footer-biografia{
-            margin-top: -300px;
+            /*footer*/
+            #footer-biografia{
+                margin-top: -100px;
+            }
         }
     }
 }

@@ -11,32 +11,49 @@
     background-position-x: -250px;
     background-position-y: 50px;
     background-size: 1100px;
+    /*main inicio*/
+    /*footer inicio*/
   }
-  /*titulos inicio*/
-  #titulo-inicio {
+  #body-inicio #main-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 100px;
+    /*secciones inicio*/
+  }
+  #body-inicio #main-inicio .seccion-separada-inicio {
+    width: 300px;
+    max-width: 100%;
+    padding: 5px 0px;
+    border: 1px solid rgb(112, 128, 144);
+    background-color: rgba(218, 224, 228, 0.76);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*titulos inicio*/
+    /*texto bienvenida*/
+  }
+  #body-inicio #main-inicio .seccion-separada-inicio #titulo-inicio {
     font-size: 50px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(112, 128, 144);
-    margin-top: 150px;
-    margin-left: 0px;
+    text-align: center;
   }
-  #subtitulo-inicio {
+  #body-inicio #main-inicio .seccion-separada-inicio #subtitulo-inicio {
     font-size: 35px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(112, 128, 144);
-    margin: 100px;
-    margin-top: -15px;
-    margin-bottom: 200px;
+    text-align: center;
   }
-  /*texto bienvenida*/
-  #div-bienvenida {
+  #body-inicio #main-inicio .seccion-separada-inicio #div-bienvenida {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(112, 128, 144);
     font-weight: bold;
-    margin-top: -100px;
-    margin-bottom: 150px;
+    text-align: center;
+  }
+  #body-inicio #footer-inicio {
+    margin-top: 100px;
   }
   /*tablet styles*/
   /*desktop styles*/
@@ -45,20 +62,20 @@
   /*foto background inicio*/
   #body-inicio {
     background-position-x: 0px;
+    /*main inicio*/
   }
-  /*titulos inicio*/
-  #titulo-inicio {
-    color: black;
-    margin-left: 30px;
+  #body-inicio #main-inicio {
+    flex-direction: column;
+    /*secciones inicio*/
   }
-  #subtitulo-inicio {
-    color: black;
-    margin-left: 120px;
+  #body-inicio #main-inicio .seccion-separada-inicio {
+    width: 450px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    /*titulo inicio*/
   }
-  /*texto bienvenida*/
-  #div-bienvenida {
-    color: black;
-    margin-left: 30px;
+  #body-inicio #main-inicio .seccion-separada-inicio #titulo-inicio {
+    font-size: 60px;
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
@@ -68,20 +85,23 @@
     background-position-x: 500px;
     background-position-y: 40px;
     background-size: 1100px auto;
+    /*secciones inicio*/
   }
-  /*titulos inicio*/
-  #titulo-inicio {
-    margin-top: 200px;
-    margin-left: 100px;
+  #body-inicio .seccion-separada-inicio {
+    width: 450px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    /*titulos inicio*/
+    /*texto bienvenida*/
   }
-  #subtitulo-inicio {
-    margin-left: 200px;
-    margin-top: -15px;
+  #body-inicio .seccion-separada-inicio #titulo-inicio {
+    font-size: 65px;
   }
-  /*texto bienvenida*/
-  #div-bienvenida {
-    margin-left: 100px;
-    margin-top: -140px;
+  #body-inicio .seccion-separada-inicio #subtitulo-inicio {
+    font-size: 45px;
+  }
+  #body-inicio .seccion-separada-inicio #div-bienvenida {
+    font-size: 35px;
   }
 }
 @media (min-width: 320px) {
@@ -89,25 +109,27 @@
   .main-bio {
     margin-left: 5px;
     margin-right: 5px;
+    /*titulo biografía*/
+    /*parrafo biografía*/
+    /*cards*/
   }
-  .titulo-biografia {
+  .main-bio .titulo-biografia {
     font-size: 50px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
-  /*parrafo*/
-  p {
+  .main-bio p {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 10px;
     margin-left: 10px;
     max-width: 100%;
   }
-  .card-bio {
+  .main-bio .card-bio {
     justify-items: center;
   }
-  .card-bio .card-group {
+  .main-bio .card-bio .card-group {
     width: 300px;
     height: auto;
     margin-left: 10px;
@@ -116,11 +138,17 @@
     grid-template-rows: 450px 450px 450px;
     row-gap: 20px;
   }
-  .card-bio .card-group .card {
+  .main-bio .card-bio .card-group .card {
     width: 300px;
     height: auto;
+    transition: all 0.3s ease;
   }
-  .card-bio .card-group .card .card-img-top {
+  .main-bio .card-bio .card-group .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.08) saturate(1.05);
+  }
+  .main-bio .card-bio .card-group .card .card-img-top {
     height: 300px;
     width: 300px;
   }
@@ -128,54 +156,57 @@
   /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
+  /*main biografía*/
   .main-bio {
     margin-left: 0px;
+    /*titulo biografía*/
+    /*parrafo biografía*/
+    /*cards*/
   }
-  /*Título principal*/
-  .titulo-biografia {
+  .main-bio .titulo-biografia {
     text-align: left;
     margin-left: 220px;
   }
-  p {
+  .main-bio p {
     margin-right: 10%;
   }
-  /*cards*/
-  .card-bio {
+  .main-bio .card-bio {
     justify-items: left;
   }
-  .card-bio .card-group {
+  .main-bio .card-bio .card-group {
     width: 750px;
   }
-  .card-bio .card-group .card {
+  .main-bio .card-bio .card-group .card {
     width: 500px;
   }
-  .card-bio .card-group .card .card-img-top {
+  .main-bio .card-bio .card-group .card .card-img-top {
     height: 250px;
     width: 249px;
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
-  /*main bio*/
+  /*main biografía*/
   .main-bio {
     margin-left: 80px;
+    /*titulo biografía*/
+    /*parrafo biografía*/
+    /*Cards*/
+    /*footer*/
   }
-  /*titulo bio*/
-  .titulo-biografia {
+  .main-bio .titulo-biografia {
     margin-top: 0px;
     margin-left: 300px;
   }
-  p {
+  .main-bio p {
     width: 850px;
     margin-right: 50px;
     margin-left: 4px;
   }
-  /*Cards*/
-  .card-bio .card-group {
+  .main-bio .card-bio .card-group {
     margin-left: 4px;
   }
-  /*footer*/
-  #footer-biografia {
-    margin-top: -300px;
+  .main-bio #footer-biografia {
+    margin-top: -100px;
   }
 }
 @media (min-width: 320px) {
@@ -296,203 +327,231 @@
 @media (min-width: 320px) {
   /*main book*/
   #main-book {
-    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*titulo book*/
+    /*carrusel de fotos book*/
+    /*subtitulo detras de escena*/
+    /*carrusel de fotos detras de escena*/
   }
-  /*titulo book*/
-  #titulo-book {
+  #main-book #titulo-book {
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
   }
-  /*carrusel de fotos book*/
-  .carousel-book {
+  #main-book .carousel-book {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     /*botones*/
   }
-  .carousel-book .carousel-inner-book {
+  #main-book .carousel-book .carousel-inner-book {
     width: 50%;
     height: auto;
+    transition: all 0.3s ease;
     /*fotos book*/
   }
-  .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
+  #main-book .carousel-book .carousel-inner-book:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  #main-book .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
-  .carousel-book .button-prev-book {
+  #main-book .carousel-book .button-prev-book {
     left: 50px;
   }
-  .carousel-book .button-next-book {
+  #main-book .carousel-book .button-next-book {
     right: 50px;
   }
-  /*subtitulo detras de escena*/
-  #h2-dde {
+  #main-book #h2-dde {
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
   }
-  /*carrusel de fotos detras de escena*/
-  .carousel-dde {
+  #main-book .carousel-dde {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     /*botones detras de escena*/
   }
-  .carousel-dde .carousel-inner-dde {
+  #main-book .carousel-dde .carousel-inner-dde {
     width: 50%;
     height: auto;
+    transition: all 0.3s ease;
     /*fotos detras de escena*/
   }
-  .carousel-dde .carousel-inner-dde .fotos-ddes .foto-dde {
+  #main-book .carousel-dde .carousel-inner-dde:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  #main-book .carousel-dde .carousel-inner-dde .fotos-ddes .foto-dde {
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
   }
-  .carousel-dde .button-prev-dde {
+  #main-book .carousel-dde .button-prev-dde {
     left: 50px;
   }
-  .carousel-dde .button-next-dde {
+  #main-book .carousel-dde .button-next-dde {
     right: 50px;
   }
   /*tablet styles*/
+  /*desktop styles*/
 }
 @media screen and (min-width: 320px) and (min-width: 600px) {
-  /*carrusel de fotos book*/
-  .carousel-inner-book {
+  #main-book {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*carrusel de fotos book*/
+    /*carrusel de fotos detras de escena*/
+  }
+  #main-book .carousel-inner-book {
     display: flex;
     width: 50%;
     height: auto;
     /*fotos book*/
   }
-  .carousel-inner-book .fotos-hijo .foto-book {
+  #main-book .carousel-inner-book .fotos-hijo .foto-book {
     width: 80%;
     height: auto;
-    margin-bottom: 30px;
   }
-  /*carrusel de fotos detras de escena*/
-  .carousel-inner-dde {
+  #main-book .carousel-inner-dde {
     display: flex;
     width: 50%;
     height: auto;
     /*fotos detras de escena*/
   }
-  .carousel-inner-dde .fotos-ddes .foto-dde {
+  #main-book .carousel-inner-dde .fotos-ddes .foto-dde {
     width: 80%;
     height: auto;
-    margin-bottom: 30px;
   }
 }
-/*desktop styles*/
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 320px) and (min-width: 990px) {
+  /*main book*/
   #main-book {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /*sección book*/
+    /*sección detras de escena*/
   }
-  /*sección book*/
-  .section-book {
+  #main-book .section-book {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     /*carrusel de fotos book*/
   }
-  .section-book .carousel-book {
+  #main-book .section-book .carousel-book {
     width: 80%;
     /*botones book*/
   }
-  .section-book .carousel-book .carousel-inner-book {
+  #main-book .section-book .carousel-book .carousel-inner-book {
     width: 40%;
     /*fotos book*/
   }
-  .section-book .carousel-book .carousel-inner-book .fotos-hijo {
+  #main-book .section-book .carousel-book .carousel-inner-book .fotos-hijo {
     width: 100%;
     height: auto;
   }
-  .section-book .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
+  #main-book .section-book .carousel-book .carousel-inner-book .fotos-hijo .foto-book {
     width: 100%;
     height: auto;
   }
-  .section-book .carousel-book .button-prev-book {
-    left: 150px;
+  #main-book .section-book .carousel-book .button-prev-book {
+    left: 80px;
   }
-  .section-book .carousel-book .button-next-book {
-    right: 150px;
+  #main-book .section-book .carousel-book .button-next-book {
+    right: 80px;
   }
-  /*sección detras de escena*/
-  .section-dde {
+  #main-book .section-dde {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     /*carrusel de fotos detras de escena*/
   }
-  .section-dde .carousel-dde {
+  #main-book .section-dde .carousel-dde {
     width: 70%;
     /*fotos detras de escena*/
   }
-  .section-dde .carousel-dde .fotos-ddes {
+  #main-book .section-dde .carousel-dde .fotos-ddes {
     width: 100%;
     height: auto;
   }
-  .section-dde .carousel-dde .fotos-ddes .foto-dde {
+  #main-book .section-dde .carousel-dde .fotos-ddes .foto-dde {
     width: 100%;
     height: auto;
   }
 }
 @media (min-width: 320px) {
-  /*titulo reel*/
-  #titulo-reel {
+  /*main reel*/
+  #main-reel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*titulo reel*/
+    /*reel*/
+    /*subtitulo contacto*/
+    /*contacto*/
+  }
+  #main-reel #titulo-reel {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
-  /*reel*/
-  .reel-mp4 {
+  #main-reel .reel-mp4 {
     width: 80%;
     height: auto;
     max-width: 100%;
     margin-left: 10%;
     margin-right: 10%;
     overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.3s ease;
   }
-  /*subtitulo contacto*/
-  #subtitulo-reel {
-    text-align: center;
+  #main-reel .reel-mp4:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
+  }
+  #main-reel #subtitulo-reel {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     font-weight: bold;
   }
-  /*contacto*/
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  #main-reel .contacto {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    margin-right: 10%;
+    margin-left: 10%;
   }
-  .contacto .conteiner-contacto {
-    width: 340px;
+  #main-reel .contacto .conteiner-contacto {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "name email" "texto texto" "none btn-enviar";
     row-gap: 5px;
-    margin-left: 0px;
     column-gap: 10px;
     justify-items: end;
-    margin-bottom: 30px;
     padding: 15px;
     background-color: rgb(112, 128, 144);
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
-  .contacto .conteiner-contacto .name {
+  #main-reel .contacto .conteiner-contacto .name {
     grid-area: name;
   }
-  .contacto .conteiner-contacto .email {
+  #main-reel .contacto .conteiner-contacto .email {
     grid-area: email;
   }
-  .contacto .conteiner-contacto .input {
+  #main-reel .contacto .conteiner-contacto .input {
     width: 100%;
     padding: 8px;
     border: 1px solid rgb(244, 244, 244);
@@ -500,12 +559,12 @@
     font-size: 14px;
     background-color: rgb(244, 244, 244);
   }
-  .contacto .conteiner-contacto .input:focus {
+  #main-reel .contacto .conteiner-contacto .input:focus {
     outline: none;
     border-color: rgb(112, 128, 144);
     box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
   }
-  .contacto .conteiner-contacto .text {
+  #main-reel .contacto .conteiner-contacto .text {
     grid-area: texto;
     width: 100%;
     padding: 8px;
@@ -515,12 +574,12 @@
     resize: vertical;
     background-color: rgb(244, 244, 244);
   }
-  .contacto .conteiner-contacto .text:focus {
+  #main-reel .contacto .conteiner-contacto .text:focus {
     outline: none;
     border-color: rgb(112, 128, 144);
     box-shadow: 0 0 3px rgba(0, 123, 255, 0.4);
   }
-  .contacto .conteiner-contacto .btn-enviar {
+  #main-reel .contacto .conteiner-contacto .btn-enviar {
     grid-area: btn-enviar;
     width: 150px;
     padding: 10px;
@@ -532,7 +591,7 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
-  .contacto .conteiner-contacto .btn-enviar:hover {
+  #main-reel .contacto .conteiner-contacto .btn-enviar:hover {
     background-color: #0056b3;
   }
   /*tablet styles*/
@@ -543,15 +602,16 @@
   .reel-mp4 {
     width: 80%;
     height: auto;
-    margin-left: 10%;
   }
   /*contacto*/
+  .contacto {
+    width: 90%;
+  }
   .contacto .conteiner-contacto {
-    width: 80%;
+    width: 100%;
     height: auto;
     padding: 25px;
     row-gap: 10px;
-    margin-left: 10%;
   }
   .contacto .conteiner-contacto .input {
     font-size: 16px;
@@ -564,12 +624,6 @@
   }
 }
 @media screen and (min-width: 320px) and (min-width: 990px) {
-  /*main reel*/
-  #main-reel {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   /*reel*/
   .reel-mp4 {
     margin-left: 0px;
@@ -580,8 +634,11 @@
     font-size: 35px;
   }
   /*contacto*/
+  .contacto {
+    width: 80%;
+  }
   .contacto .conteiner-contacto {
-    width: 400px;
+    width: 100%;
     padding: 30px;
     row-gap: 12px;
     margin-left: 0px;
@@ -607,22 +664,38 @@
     width: 95%;
     max-width: 100%;
     padding: 20px 10px;
-    border: 10px solid rgb(211, 211, 211);
-    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(112, 128, 144);
+    background-color: rgb(218, 224, 228);
     border-radius: 20px;
+    margin: 5px;
   }
   /*Separación de secciones book y reel*/
   .seccion-separada-br {
-    width: 95%;
+    width: 85%;
     max-width: 100%;
     padding: 10px 0px;
-    border: 10px solid rgb(211, 211, 211);
-    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(112, 128, 144);
+    background-color: rgb(218, 224, 228);
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
   }
   /*footer*/
-  .ul-footer {
+  footer {
+    margin-left: 5px;
+    background-color: rgba(218, 224, 228, 0.596);
+    border: 1px solid rgb(112, 128, 144);
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  footer .ul-footer {
     list-style-type: none;
+    padding: 0%;
   }
   /*navbar*/
   .navbar {
@@ -663,9 +736,12 @@
   }
   /*Separación de secciones book y reel*/
   .seccion-separada-br {
-    width: 80%;
+    width: 60%;
     max-width: 100%;
-    margin-left: 80px;
+  }
+  /*footer*/
+  footer {
+    margin-left: 30px;
   }
   /*navbar*/
   .navbar .container-fluid {
@@ -703,12 +779,17 @@
   }
   /*Separación de secciones book y reel*/
   .seccion-separada-br {
-    width: 50%;
+    width: 60%;
     max-width: 100%;
+    height: auto;
     margin-left: 80px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  /*footer*/
+  footer {
+    margin-left: 50px;
   }
   /*navbar*/
   .navbar .container-fluid {
@@ -753,6 +834,8 @@
     width: 350px;
     max-width: 100%;
     height: auto;
+    border: 3px solid rgb(112, 128, 144);
+    border-radius: 10px;
   }
   /*foto biografia*/
   .div-foto-bio {
@@ -775,6 +858,8 @@
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 3px solid rgb(112, 128, 144);
+    border-radius: 10px;
   }
   /*tablet styles*/
   /*desktop styles*/

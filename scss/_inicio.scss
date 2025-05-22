@@ -13,36 +13,57 @@
         background-position-x: -250px;
         background-position-y: 50px;
         background-size: 1100px;
-    }
-    
-    /*titulos inicio*/
-    #titulo-inicio{
-        font-size: 50px;
-        font-weight: bold;
-        font-family: $font-primary;
-        color: $secundary-color;
-        margin-top: 150px;
-        margin-left: 0px;
-    }
-    
-    #subtitulo-inicio{
-        font-size: 35px;
-        font-weight: bold;
-        font-family: $font-primary;
-        color: $secundary-color;
-        margin: 100px;
-        margin-top: -15px; 
-        margin-bottom: 200px;
+
+        /*main inicio*/
+        #main-inicio{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-top: 100px;
+
+            /*secciones inicio*/
+            .seccion-separada-inicio{
+                width: 300px;
+                max-width: 100%;
+                padding: 5px 0px;
+                border: 1px solid $secundary-color;
+                background-color: rgba(218, 224, 228, 0.76);
+                border-radius: 20px;
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                /*titulos inicio*/
+                #titulo-inicio{
+                    font-size: 50px;
+                    font-weight: bold;
+                    font-family: $font-primary;
+                    text-align: center;
+                }
+
+                #subtitulo-inicio{
+                    font-size: 35px;
+                    font-weight: bold;
+                    font-family: $font-primary;
+                    text-align: center;
+                }
+
+                /*texto bienvenida*/
+                #div-bienvenida{
+                    font-family: $font-primary;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+
+        /*footer inicio*/
+        #footer-inicio{
+            margin-top: 100px;
+        }
     }
 
-    /*texto bienvenida*/
-    #div-bienvenida{
-        font-family: $font-primary;
-        color: $secundary-color;
-        font-weight: bold;
-        margin-top: -100px;
-        margin-bottom: 150px;
-    }
 
     /*tablet styles*/
     @include tablet {
@@ -50,23 +71,23 @@
         /*foto background inicio*/
         #body-inicio{
             background-position-x: 0px;
-        }
 
-        /*titulos inicio*/
-        #titulo-inicio{
-            color: black;
-            margin-left: 30px;
-        }
-    
-        #subtitulo-inicio{
-            color: black;
-            margin-left: 120px;
-        }
+            /*main inicio*/
+            #main-inicio{
+                flex-direction: column;
 
-        /*texto bienvenida*/
-        #div-bienvenida{
-            color: black;
-            margin-left: 30px;
+                /*secciones inicio*/
+                .seccion-separada-inicio{
+                    width: 450px;
+                    margin-left: 50px;
+                    margin-bottom: 50px;
+
+                    /*titulo inicio*/
+                    #titulo-inicio{
+                        font-size: 60px;
+                    }
+                }
+            }
         }
     }
 
@@ -79,23 +100,27 @@
             background-position-x: 500px;
             background-position-y: 40px;
             background-size: 1100px auto;
-        }
 
-        /*titulos inicio*/
-        #titulo-inicio{
-            margin-top: 200px;
-            margin-left: 100px;
-        }
-    
-        #subtitulo-inicio{
-            margin-left: 200px;
-            margin-top: -15px;
-        }
+            /*secciones inicio*/
+            .seccion-separada-inicio{
+                width: 450px;
+                margin-left: 400px;
+                margin-bottom: 50px;
 
-        /*texto bienvenida*/
-        #div-bienvenida{
-            margin-left: 100px;
-            margin-top: -140px;
+                /*titulos inicio*/
+                #titulo-inicio{
+                    font-size: 65px;
+                }
+
+                #subtitulo-inicio{
+                    font-size: 45px;
+                }
+
+                /*texto bienvenida*/
+                #div-bienvenida{
+                    font-size: 35px;
+                }
+            }
         }
     }
 }
